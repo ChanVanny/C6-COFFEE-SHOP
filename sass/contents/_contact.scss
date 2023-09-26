@@ -1,0 +1,113 @@
+
+
+.header{
+    height: 600px;
+    padding: 100px 50px 0 50px  ;
+    display: flex;
+    .input{
+        flex: 1;
+        form{
+            width: 100%;
+            height: 100%;
+            .title{
+                height: 70px;
+            }
+            .fullname, .email{
+                margin-bottom: 30px;
+                input{
+                    width: 90%;
+                    height: 50px;
+                    padding: 5PX;
+                    font-size: 20px;
+                    border: none;
+                    background: #F0ECEC;
+                }
+                
+            }
+            .feedback{
+                margin-bottom: 40px;
+                h3{
+                    height: 40px;
+                }
+                input{
+                  width: 90%;
+                height: 70px;
+                padding: 5PX;
+                font-size: 20px;
+                border: none;
+                background: #F0ECEC;
+            }  
+                }
+                
+            .submit{
+                input{
+                    height: 60px;
+                    width: 200px;
+                    border: none;
+                    border-radius: 7px;
+                    font-size: 25px;
+                    background-color: #DF7357;
+                }
+            }
+            
+        }
+    }
+    .map{
+        // padding-top: 30px;
+        flex: 1;
+        // background-color: aliceblue;
+        .mapouter {
+            position: relative;
+            text-align: right;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .gmap_canvas {
+            overflow: hidden;
+            background: none !important;
+            width: 100%;
+            height:100%;
+        }
+        .gmap_iframe {
+            width: 100%!important;
+            height: 100% !important;
+        }
+    }
+}
+main{
+    height: 600px;
+    padding: 50px;
+    .title-main{
+        height: 170px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .card-person{
+        display: flex;
+        justify-content: space-between;
+        
+       .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 23%;
+        height: 300px;
+        
+        p{
+            margin-top: 20px;
+        }
+        img{
+            margin: 20px;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+        }
+       }
+
+        
+    }
+}

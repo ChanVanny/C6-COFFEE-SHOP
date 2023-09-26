@@ -3,10 +3,6 @@
   margin: 0;
 }
 
-body {
-  background-color: pink;
-}
-
 nav {
   height: 70px;
   display: flex;
@@ -49,4 +45,105 @@ nav .navbar-right {
   background-size: cover;
   background-repeat: no-repeat;
   height: 500px;
+}
+
+.header {
+  height: 600px;
+  padding: 100px 50px 0 50px;
+  display: flex;
+}
+.header .input {
+  flex: 1;
+}
+.header .input form {
+  width: 100%;
+  height: 100%;
+}
+.header .input form .title {
+  height: 70px;
+}
+.header .input form .fullname, .header .input form .email {
+  margin-bottom: 30px;
+}
+.header .input form .fullname input, .header .input form .email input {
+  width: 90%;
+  height: 50px;
+  padding: 5PX;
+  font-size: 20px;
+  border: none;
+  background: #F0ECEC;
+}
+.header .input form .feedback {
+  margin-bottom: 40px;
+}
+.header .input form .feedback h3 {
+  height: 40px;
+}
+.header .input form .feedback input {
+  width: 90%;
+  height: 70px;
+  padding: 5PX;
+  font-size: 20px;
+  border: none;
+  background: #F0ECEC;
+}
+.header .input form .submit input {
+  height: 60px;
+  width: 200px;
+  border: none;
+  border-radius: 7px;
+  font-size: 25px;
+  background-color: #DF7357;
+}
+.header .map {
+  flex: 1;
+}
+.header .map .mapouter {
+  position: relative;
+  text-align: right;
+  width: 100%;
+  height: 100%;
+}
+.header .map .gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  width: 100%;
+  height: 100%;
+}
+.header .map .gmap_iframe {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+main {
+  height: 600px;
+  padding: 50px;
+}
+main .title-main {
+  height: 170px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .card-person {
+  display: flex;
+  justify-content: space-between;
+}
+main .card-person .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 23%;
+  height: 300px;
+}
+main .card-person .card p {
+  margin-top: 20px;
+}
+main .card-person .card img {
+  margin: 20px;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
 }/*# sourceMappingURL=mian.css.map */
