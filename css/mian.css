@@ -8,8 +8,45 @@ body {
 }
 
 nav {
-  color: pink;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  background-color: gainsboro;
+  padding: 0 50px;
 }
-nav h1 {
-  color: aqua;
+nav .navbar-left {
+  flex: 3;
+  display: flex;
+}
+nav .navbar-left img {
+  width: 130px;
+}
+nav .navbar-right {
+  flex: 4;
+  display: flex;
+  justify-content: end;
+  gap: 50px;
+}
+
+.container1 {
+  background: url(/img/Homecafe.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+.container1 .container1-left {
+  padding: 50px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container-menu {
+  background: url(/img/Homecafe.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
 }/*# sourceMappingURL=mian.css.map */
