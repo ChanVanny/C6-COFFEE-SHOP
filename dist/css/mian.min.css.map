@@ -1,1 +1,1 @@
-{"version":3,"sources":["../../sass/Components/_nav.scss","../../sass/Variavle/_variavale.scss"],"names":[],"mappings":"AACA,IACI,UCFQ,CDGR,OACI,UAAA","file":"mian.min.css"}
+{"version":3,"sources":["../../sass/mian.scss","../../sass/Components/_nav.scss","../../sass/Variavle/_variavale.scss"],"names":[],"mappings":"AACA,EACI,SAAA,CACA,QAAA,CAEJ,KACI,qBAAA,CCLJ,IACI,UCFQ,CDGR,OACI,UAAA","file":"mian.min.css"}

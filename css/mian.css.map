@@ -1,1 +1,1 @@
-{"version":3,"sources":["../sass/Components/_nav.scss","../sass/Variavle/_variavale.scss","mian.css"],"names":[],"mappings":"AACA;EACI,WCFQ;ACEZ;AFCI;EACI,WAAA;AECR","file":"mian.css"}
+{"version":3,"sources":["../sass/mian.scss","mian.css","../sass/Components/_nav.scss","../sass/Variavle/_variavale.scss"],"names":[],"mappings":"AACA;EACI,UAAA;EACA,SAAA;ACAJ;;ADEA;EACI,sBAAA;ACCJ;;ACNA;EACI,WCFQ;AFWZ;ACRI;EACI,WAAA;ADUR","file":"mian.css"}
