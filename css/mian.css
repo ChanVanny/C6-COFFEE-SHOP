@@ -64,6 +64,55 @@ footer .discrib .locations p {
   height: 60px;
 }
 
+.group {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.paragrab {
+  height: 90px;
+  width: 60%;
+}
+
+.title- {
+  height: 50%;
+  width: 50%;
+  padding: 30px;
+  background-color: pink;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title- h1 {
+  flex: 0.2;
+  width: 60%;
+}
+.title- p {
+  flex: 1;
+  width: 80%;
+  margin-bottom: 30px;
+}
+.title- img {
+  height: 200px;
+  margin-bottom: 20px;
+}
+.title- .back {
+  padding: 4px 100px 4px 100px;
+  border-radius: 7px;
+  font-size: 15px;
+  background: white;
+}
+.title- .back a {
+  color: black;
+  text-decoration: none;
+}
+
 .container1 {
   background: url(/img/Homecafe.jpg);
   background-position: center;
@@ -156,7 +205,13 @@ footer .discrib .locations p {
   display: flex;
 }
 .header .input {
-  flex: 1;
+  background-color: white;
+  margin-left: 10px;
+  box-shadow: 0 0 2em rgb(187, 186, 186);
+  padding: 30px;
+  border-radius: 20px;
+  margin-right: 20px;
+  flex: 0.9;
 }
 .header .input form {
   width: 100%;
@@ -171,8 +226,9 @@ footer .discrib .locations p {
 .header .input form .fullname input, .header .input form .email input {
   width: 90%;
   height: 50px;
-  padding: 5PX;
+  padding-left: 30PX;
   font-size: 20px;
+  border-radius: 10px;
   border: none;
   background: #F0ECEC;
 }
@@ -185,18 +241,26 @@ footer .discrib .locations p {
 .header .input form .feedback input {
   width: 90%;
   height: 70px;
-  padding: 5PX;
+  padding-left: 30PX;
+  border-radius: 10px;
   font-size: 20px;
   border: none;
   background: #F0ECEC;
 }
-.header .input form .submit input {
-  height: 60px;
-  width: 200px;
-  border: none;
+.header .input form .submit {
+  margin-top: 100px;
+}
+.header .input form .submit a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  padding: 20px 70px 20px 70px;
   border-radius: 7px;
-  font-size: 25px;
+  font-size: 30px;
   background-color: #DF7357;
+}
+.header .input form .submit a:hover {
+  background-color: black;
 }
 .header .map {
   flex: 1;
