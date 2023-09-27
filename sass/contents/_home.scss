@@ -1,17 +1,151 @@
-
-
-.container1{
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+body {
+    // background:transparent;
+    background:rgba(255, 255, 255, 0.237);
+}
+.container1 {
     background: url(/img/Homecafe.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 500px;
 
-    .container1-left{
-        padding: 50px;
+    .container1-left {
         color: white;
+        text-align: center;
+    }
+}
+
+.card-promotion {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 8%;
+    justify-content: space-evenly;
+    .card-left {
+        text-align: center;
+        margin-top: 20px;
+        line-height: 3;
+        .info-card {
+            line-height: 2;
+            font-size: 20px;
+        }
+
+        button {
+            width: 400px;
+            padding: 20px;
+            border-radius: 7px 7px 7px 7px;
+            margin-top: 5%;
+            border: none;
+
+            h2 {
+                color: #EC1313;
+                line-height: 2;
+                font-size: 40px;
+            }
+        }
+    }
+    .crad-center {
+        height: 350px;
+        width: 300px;
+        background-image: url(/img/pic-promotion.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 10px;
+        border-radius: 50px 0 0 0;
+
+    }
+
+    .card-right {
+        margin-top: 50px;
+        line-height: 3;
+
+        h1 {
+            width: 300px;
+            color: #EC1313;
+            font-size: 70px;
+        }
+    }
+}
+
+.content-best-menu {
+    text-align: center;
+    margin: 70px;
+    line-height: 2;
+}
+
+.group-famous-menu {
+    width: 80%;
+    margin: auto;
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 10px;
+
+    .menu {
         display: flex;
-        flex-direction: column;
-        gap: 20px;
+        width: 98%;
+        background: #d4848421;
+        margin: auto;
+        margin-top: 40px;
+        padding: 10px;
+
+        .text-infor {
+            flex: 1;
+        }
+
+        .group-menu {
+            display: flex;
+            flex: 1;
+            justify-content: end;
+            margin: auto;
+            gap: 8px;
+            padding: 30px;
+        }
+
+        .text-infor {
+            h3 {
+                width: 200px;
+                background: #DF7357;
+                padding: 20px;
+                font-size: 30px;
+                margin: -10px 0 30px -10px;
+                border-radius: 0 0 90px;
+            }
+
+            button {
+                width: 200px;
+                padding: 20px;
+                margin-top: 10%;
+                color: white;
+                background: #DF7357;
+                border: none;
+                border-radius: 5px 5px 5px 5px;
+            }
+        }
+    }
+}
+.about {
+    width: 80%;
+    margin: auto;
+    h1 {
+        text-align: center;
+        margin: 5%;
+    }
+    .content-about{
+        display: flex;
+    }
+    .about-center img{
+        width: 300px;
+        height: 400px;
+        margin-top: -90px;
+    }
+    .about-left,
+    .about-right{
+        margin-top: 30px;
     }
 }
