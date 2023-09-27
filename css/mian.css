@@ -3,13 +3,6 @@
   margin: 0;
 }
 
-<<<<<<< HEAD
-body {
-  background-color: gainsboro;
-}
-
-=======
->>>>>>> 6a3d3de50e9873f4cc8031f28cb1b2efe016604b
 nav {
   height: 70px;
   display: flex;
@@ -29,6 +22,46 @@ nav .navbar-right {
   display: flex;
   justify-content: end;
   gap: 50px;
+}
+
+footer {
+  padding: 50px;
+  background-color: #191414;
+  color: white;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+footer .discrib {
+  width: 250px;
+}
+footer .discrib h2 {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  color: #DF7357;
+}
+footer .discrib .location, footer .discrib .phone, footer .discrib .email- {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 30px;
+}
+footer .discrib .soilmidia {
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+}
+footer .discrib .soilmidia i {
+  margin-top: 30px;
+  font-size: 25px;
+  border: 1.5px solid white;
+  padding: 3px;
+}
+footer .discrib .locations {
+  gap: 30px;
+}
+footer .discrib .locations p {
+  height: 60px;
 }
 
 .container1 {
@@ -54,7 +87,6 @@ nav .navbar-right {
   height: 500px;
 }
 
-<<<<<<< HEAD
 .container-menu2 {
   background-color: white;
   margin: 60px;
@@ -116,7 +148,8 @@ nav .navbar-right {
 }
 .container-menu3 .container-menu3-card .card .card-button .card-button-right span i {
   font-size: x-large;
-=======
+}
+
 .header {
   height: 600px;
   padding: 100px 50px 0 50px;
@@ -216,5 +249,4 @@ main .card-person .card img {
   height: 150px;
   width: 150px;
   border-radius: 50%;
->>>>>>> 6a3d3de50e9873f4cc8031f28cb1b2efe016604b
 }/*# sourceMappingURL=mian.css.map */
