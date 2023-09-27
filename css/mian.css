@@ -28,6 +28,46 @@ nav .navbar-right {
   gap: 50px;
 }
 
+footer {
+  padding: 50px;
+  background-color: #191414;
+  color: white;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+footer .discrib {
+  width: 250px;
+}
+footer .discrib h2 {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  color: #DF7357;
+}
+footer .discrib .location, footer .discrib .phone, footer .discrib .email- {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 30px;
+}
+footer .discrib .soilmidia {
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+}
+footer .discrib .soilmidia i {
+  margin-top: 30px;
+  font-size: 25px;
+  border: 1.5px solid white;
+  padding: 3px;
+}
+footer .discrib .locations {
+  gap: 30px;
+}
+footer .discrib .locations p {
+  height: 60px;
+}
+
 .container1 {
   background: url(/img/Homecafe.jpg);
   background-position: center;
