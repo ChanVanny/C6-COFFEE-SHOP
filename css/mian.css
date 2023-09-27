@@ -8,10 +8,14 @@ body {
 }
 
 nav {
+  background-color: white;
+  width: 93%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
   height: 70px;
   display: flex;
   align-items: center;
-  background-color: gainsboro;
   padding: 0 50px;
 }
 nav .navbar-left {
@@ -26,6 +30,14 @@ nav .navbar-right {
   display: flex;
   justify-content: end;
   gap: 50px;
+}
+nav .navbar-right a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+nav .navbar-right a:hover {
+  color: rgb(239, 103, 148);
 }
 
 footer {
@@ -83,29 +95,31 @@ footer .discrib .locations p {
   gap: 20px;
 }
 
+select {
+  border: none;
+}
+
 .container-menu1 {
-  background: url(/img/MenuBackgroud.jpg);
+  background: url(/img/MenuBackground2.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 500px;
 }
 
-.container-menu2 {
-  background-color: white;
-  margin: 60px;
-  justify-content: space-between;
-  display: flex;
-  padding: 40px;
+.container-menu2-left {
+  padding-top: 70px;
+  text-align: center;
 }
-.container-menu2 .container-menu2-left {
-  background-color: blueviolet;
+
+.container-menu3-header h1 {
+  text-align: center;
+  align-items: center;
+  color: rgb(218, 75, 123);
 }
-.container-menu2 .container-menu2-left img {
-  width: 120px;
-}
-.container-menu2 .container-menu2-right {
-  background-color: pink;
+
+.container5 {
+  padding: 60px;
 }
 
 .container-menu3 {
@@ -138,13 +152,6 @@ footer .discrib .locations p {
   flex-direction: column;
   gap: 10px;
 }
-.container-menu3 .container-menu3-card .card .card-button .card-button-left button {
-  background-color: #c64771;
-  padding: 8px;
-  border: none;
-  border-radius: 3px;
-  color: white;
-}
 .container-menu3 .container-menu3-card .card .card-button .card-button-right {
   display: flex;
   flex-direction: column;
@@ -152,6 +159,44 @@ footer .discrib .locations p {
 }
 .container-menu3 .container-menu3-card .card .card-button .card-button-right span i {
   font-size: x-large;
+}
+
+.container5 {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.container5-card-cake {
+  display: flex;
+  justify-content: space-around;
+}
+.container5-card-cake .card-cake {
+  background-color: white;
+  width: 230px;
+  height: 270px;
+  padding: 10px;
+  text-align: center;
+}
+.container5-card-cake .card-cake .card-cake-top {
+  display: flex;
+  justify-content: end;
+}
+.container5-card-cake .card-cake .card-cake-top i {
+  font-size: x-large;
+}
+.container5-card-cake .card-cake .card-cake-buttom {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+button {
+  background-color: #c64771;
+  padding: 8px;
+  border: none;
+  border-radius: 3px;
+  color: white;
 }
 
 .header {

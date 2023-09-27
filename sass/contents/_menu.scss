@@ -1,32 +1,38 @@
 
+
+select{
+    // padding: 0;
+    border: none;
+}
+
 .container-menu1{
-    background: url(/img/MenuBackgroud.jpg);
+    background: url(/img/MenuBackground2.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 500px;
 }
 
-.container-menu2{
-    background-color: white;
-    margin: 60px;
-    justify-content: space-between;
-    
-    display: flex;
-    padding: 40px;
-
-    .container-menu2-left{
-        // display: flex;
-        // flex: ;
-        // flex-direction: column;
-        background-color: blueviolet;
-        img{
-            width: 120px;
-        }
-    }
-    .container-menu2-right{
-        background-color: pink;
-    }
+.container-menu2-left{
+    padding-top: 70px;
+    text-align: center;
 
 }
-@import "../Components/coffeecard"
+
+
+.container-menu3-header{
+    h1{
+        text-align: center;
+        align-items: center;
+        color: rgb(218, 75, 123)
+
+    }
+}
+
+.container5{
+    // margin: 60px;
+    padding: 60px;
+}
+@import "../Components/coffeecard";
+@import "../Components/cakecard";
+@import "../Components/button";
