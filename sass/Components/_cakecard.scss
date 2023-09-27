@@ -1,0 +1,34 @@
+
+
+.container5{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.container5-card-cake{
+    display: flex;
+    justify-content: space-around;
+
+    .card-cake{
+        // border: 2px solid #ac3f3f;
+        background-color: white;
+        width: 230px;
+        height: 270px;
+        padding: 10px;
+        text-align: center;
+    
+        .card-cake-top{
+            display: flex;
+            justify-content: end;
+    
+            i{
+                font-size: x-large;
+            }
+        }
+        .card-cake-buttom{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+}
