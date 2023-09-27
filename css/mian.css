@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+body {
+  background-color: gainsboro;
+}
+
 nav {
   height: 70px;
   display: flex;
@@ -22,6 +26,46 @@ nav .navbar-right {
   display: flex;
   justify-content: end;
   gap: 50px;
+}
+
+footer {
+  padding: 50px;
+  background-color: #191414;
+  color: white;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+footer .discrib {
+  width: 250px;
+}
+footer .discrib h2 {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  color: #DF7357;
+}
+footer .discrib .location, footer .discrib .phone, footer .discrib .email- {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 30px;
+}
+footer .discrib .soilmidia {
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+}
+footer .discrib .soilmidia i {
+  margin-top: 30px;
+  font-size: 25px;
+  border: 1.5px solid white;
+  padding: 3px;
+}
+footer .discrib .locations {
+  gap: 30px;
+}
+footer .discrib .locations p {
+  height: 60px;
 }
 
 * {
@@ -48,10 +92,10 @@ body {
 
 .card-promotion {
   display: flex;
-  width: 80%;
-  margin: auto;
-  margin-top: 8%;
+  margin: 0 60px 0 60px;
+  margin-top: 5%;
   justify-content: space-evenly;
+  background: rgba(218, 165, 32, 0.347);
 }
 .card-promotion .card-left {
   text-align: center;
@@ -61,6 +105,9 @@ body {
 .card-promotion .card-left .info-card {
   line-height: 2;
   font-size: 20px;
+}
+.card-promotion .card-left .info-card h2 {
+  color: #EC1313;
 }
 .card-promotion .card-left button {
   width: 400px;
@@ -86,23 +133,41 @@ body {
 }
 .card-promotion .card-right {
   margin-top: 50px;
-  line-height: 3;
+  line-height: 2;
 }
 .card-promotion .card-right h1 {
+  font-size: 20px;
+}
+.card-promotion .card-right h2 {
   width: 300px;
   color: #EC1313;
-  font-size: 70px;
+  font-size: 90px;
+}
+.card-promotion .card-right p {
+  font-size: 20px;
+}
+.card-promotion .card-right button {
+  width: 400px;
+  background: #DF7357;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 0 60px 0 60px;
+  margin-left: 90px;
+  border: none;
 }
 
 .content-best-menu {
   text-align: center;
   margin: 70px;
   line-height: 2;
+  font-size: 30px;
+}
+.content-best-menu h2 {
+  font-size: 40px;
 }
 
 .group-famous-menu {
-  width: 80%;
-  margin: auto;
+  margin: 70px 60px 70px 60px;
   font-size: 20px;
   line-height: 1.5;
   padding: 10px;
@@ -171,6 +236,69 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   height: 500px;
+}
+
+.container-menu2 {
+  background-color: white;
+  margin: 60px;
+  justify-content: space-between;
+  display: flex;
+  padding: 40px;
+}
+.container-menu2 .container-menu2-left {
+  background-color: blueviolet;
+}
+.container-menu2 .container-menu2-left img {
+  width: 120px;
+}
+.container-menu2 .container-menu2-right {
+  background-color: pink;
+}
+
+.container-menu3 {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding: 60px;
+}
+.container-menu3 .container-menu3-card {
+  display: flex;
+  justify-content: space-around;
+}
+.container-menu3 .container-menu3-card .card {
+  background-color: white;
+  width: 300px;
+}
+.container-menu3 .container-menu3-card .card .card-top img {
+  width: 300px;
+}
+.container-menu3 .container-menu3-card .card .card-center {
+  padding: 10px;
+}
+.container-menu3 .container-menu3-card .card .card-button {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+}
+.container-menu3 .container-menu3-card .card .card-button .card-button-left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.container-menu3 .container-menu3-card .card .card-button .card-button-left button {
+  background-color: #c64771;
+  padding: 8px;
+  border: none;
+  border-radius: 3px;
+  color: white;
+}
+.container-menu3 .container-menu3-card .card .card-button .card-button-right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.container-menu3 .container-menu3-card .card .card-button .card-button-right span i {
+  font-size: x-large;
 }
 
 .header {

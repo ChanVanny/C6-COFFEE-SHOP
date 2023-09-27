@@ -6,3 +6,27 @@
     background-repeat: no-repeat;
     height: 500px;
 }
+
+.container-menu2{
+    background-color: white;
+    margin: 60px;
+    justify-content: space-between;
+    
+    display: flex;
+    padding: 40px;
+
+    .container-menu2-left{
+        // display: flex;
+        // flex: ;
+        // flex-direction: column;
+        background-color: blueviolet;
+        img{
+            width: 120px;
+        }
+    }
+    .container-menu2-right{
+        background-color: pink;
+    }
+
+}
+@import "../Components/coffeecard"

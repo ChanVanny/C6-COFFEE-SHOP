@@ -22,10 +22,10 @@ body {
 
 .card-promotion {
     display: flex;
-    width: 80%;
-    margin: auto;
-    margin-top: 8%;
+    margin: 0 60px 0 60px;
+    margin-top: 5%;
     justify-content: space-evenly;
+    background: rgba(218, 165, 32, 0.347);
     .card-left {
         text-align: center;
         margin-top: 20px;
@@ -33,8 +33,10 @@ body {
         .info-card {
             line-height: 2;
             font-size: 20px;
+            h2{
+                color: #EC1313;
+            }
         }
-
         button {
             width: 400px;
             padding: 20px;
@@ -63,12 +65,26 @@ body {
 
     .card-right {
         margin-top: 50px;
-        line-height: 3;
-
-        h1 {
+        line-height: 2;
+        h1{
+            font-size: 20px;
+        }
+        h2 {
             width: 300px;
             color: #EC1313;
-            font-size: 70px;
+            font-size: 90px;
+        }
+        p{
+            font-size: 20px;
+        }
+        button{
+            width: 400px;
+            background:#DF7357;
+            padding: 20px;
+            font-size: 20px;
+            border-radius: 0 60px 0 60px;
+            margin-left: 90px;
+            border: none;
         }
     }
 }
@@ -77,11 +93,14 @@ body {
     text-align: center;
     margin: 70px;
     line-height: 2;
+    font-size: 30px;
+    h2{
+        font-size: 40px;
+    }
 }
 
 .group-famous-menu {
-    width: 80%;
-    margin: auto;
+    margin: 70px 60px 70px 60px;
     font-size: 20px;
     line-height: 1.5;
     padding: 10px;
@@ -97,7 +116,6 @@ body {
         .text-infor {
             flex: 1;
         }
-
         .group-menu {
             display: flex;
             flex: 1;
