@@ -3,13 +3,10 @@
   margin: 0;
 }
 
-<<<<<<< HEAD
 body {
   background-color: gainsboro;
 }
 
-=======
->>>>>>> 6a3d3de50e9873f4cc8031f28cb1b2efe016604b
 nav {
   height: 70px;
   display: flex;
@@ -54,7 +51,6 @@ nav .navbar-right {
   height: 500px;
 }
 
-<<<<<<< HEAD
 .container-menu2 {
   background-color: white;
   margin: 60px;
@@ -116,7 +112,8 @@ nav .navbar-right {
 }
 .container-menu3 .container-menu3-card .card .card-button .card-button-right span i {
   font-size: x-large;
-=======
+}
+
 .header {
   height: 600px;
   padding: 100px 50px 0 50px;
@@ -216,5 +213,4 @@ main .card-person .card img {
   height: 150px;
   width: 150px;
   border-radius: 50%;
->>>>>>> 6a3d3de50e9873f4cc8031f28cb1b2efe016604b
 }/*# sourceMappingURL=mian.css.map */
