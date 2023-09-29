@@ -1,169 +1,279 @@
+@import "../Mixin/Responsive";
+
 * {
     margin: 0;
     padding: 0;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
-body {
-    // background:transparent;
-    background:rgba(255, 255, 255, 0.237);
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
-.container1 {
-    background: url(/img/Homecafe.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 500px;
 
-    .container1-left {
+.container {
+    display: flex;
+    background-image: url(/img/Homecafe.jpg);
+    height: 80%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+
+    .text {
+        flex: 2;
+        background:rgba(245, 222, 179, 0.141);
         color: white;
-        text-align: center;
+        border-radius: 10px 10px 10px 10px;
+        margin-left: 40px;
+        h1{
+            font-size: 30px;
+            padding: 10px;
+        }
+        p{
+            font-size: 20px;
+        }
+        h1,p{
+            width: 80%;
+        }
+
+    }
+    .cover-pic {
+        display: flex;
+        flex: 1;
+        margin: 12% 0 0 0;
+        padding: 20px;
+        .cover-sell img {
+            width: 330px;
+            height: 200px;
+           margin: 70px -90px 0 0;
+           border-radius: 50px 0  0 ;
+        }
+
+        .cover-sit img {
+            width: 300px;
+            height: 200px;
+            margin: -85px 30px 0 -40px;
+            border-radius: 40px 40px 40px 40px;
+        }
+        .cover-sell img, .cover-sit img {
+            border: 3px solid white;
+        }
     }
 }
 
 .card-promotion {
     display: flex;
-    margin: 0 60px 0 60px;
-    margin-top: 5%;
+    margin: 60px 60px 0 60px;
     justify-content: space-evenly;
-    background: rgba(218, 165, 32, 0.347);
+    background: #d4848421;
+
     .card-left {
+        flex: 2;
         text-align: center;
-        margin-top: 20px;
-        line-height: 3;
+        margin-top: 50px;
+
         .info-card {
             line-height: 2;
-            font-size: 20px;
-            h2{
-                color: #EC1313;
-            }
-        }
-        button {
-            width: 400px;
-            padding: 20px;
-            border-radius: 7px 7px 7px 7px;
-            margin-top: 5%;
-            border: none;
 
             h2 {
                 color: #EC1313;
-                line-height: 2;
-                font-size: 40px;
+            }
+        }
+
+        .box-dicount {
+            width: 200px;
+            margin-top: 50px;
+            line-height: 2;
+            background: #c64771;
+            padding: 10px;
+            border-radius: 0 30px 30px 0;
+
+            h3 {
+                font-size: 20px;
+            }
+
+            h2 {
+                color: white;
             }
         }
     }
+
     .crad-center {
+        flex: 1.5;
+        background-image: url(/img/pic-promotion.png);
         height: 350px;
         width: 300px;
-        background-image: url(/img/pic-promotion.png);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
         margin: 10px;
-        border-radius: 50px 0 0 0;
-
+        border-radius: 80px 0 0 0;
     }
 
     .card-right {
+        flex: 1;
+        text-align: center;
         margin-top: 50px;
         line-height: 2;
-        h1{
-            font-size: 20px;
-        }
+
         h2 {
             width: 300px;
             color: #EC1313;
             font-size: 90px;
+            margin: auto;
         }
-        p{
-            font-size: 20px;
-        }
-        button{
-            width: 400px;
-            background:#DF7357;
+
+        button {
+            width: 300px;
             padding: 20px;
             font-size: 20px;
-            border-radius: 0 60px 0 60px;
             margin-left: 90px;
             border: none;
+            line-height: 1.5;
+            border-radius: 0 60px 0 60px;
+
+            p {
+                color: black;
+                font-size: 20px;
+            }
         }
     }
 }
 
 .content-best-menu {
     text-align: center;
-    margin: 70px;
-    line-height: 2;
-    font-size: 30px;
-    h2{
-        font-size: 40px;
+    line-height: 3;
+    margin-top: 60px;
+
+    p {
+        font-size: 25px;
+        line-height: 1.5;
     }
 }
-
 .group-famous-menu {
-    margin: 70px 60px 70px 60px;
-    font-size: 20px;
-    line-height: 1.5;
-    padding: 10px;
+    padding: 0 60px 0 60px;
 
     .menu {
         display: flex;
-        width: 98%;
         background: #d4848421;
         margin: auto;
-        margin-top: 40px;
-        padding: 10px;
+        margin-top: 60px;
+        padding: 20px;
 
-        .text-infor {
-            flex: 1;
+        .text-info {
+            flex: 2;
+            line-height: 1.5;
+
+            h2 {
+                display: flex;
+                width: 200px;
+                height: 60px;
+                color: white;
+                background: #DF7357;
+                align-items: center;
+                border-radius: 0 0 90px 0;
+                margin: -20px 0 0 -20px;
+                padding-left: 15px;
+            }
+
+            p {
+                margin-top: 20px;
+            }
+
+            button {
+                width: 200px;
+                padding: 15px;
+                margin-top: 80px;
+                font-size: 20px;
+                border-radius: 5px 5px 5px 5px;
+            }
         }
+
         .group-menu {
             display: flex;
             flex: 1;
             justify-content: end;
             margin: auto;
             gap: 8px;
-            padding: 30px;
-        }
-
-        .text-infor {
-            h3 {
-                width: 200px;
-                background: #DF7357;
-                padding: 20px;
-                font-size: 30px;
-                margin: -10px 0 30px -10px;
-                border-radius: 0 0 90px;
-            }
-
-            button {
-                width: 200px;
-                padding: 20px;
-                margin-top: 10%;
-                color: white;
-                background: #DF7357;
-                border: none;
-                border-radius: 5px 5px 5px 5px;
-            }
         }
     }
 }
+
 .about {
-    width: 80%;
-    margin: auto;
+    padding: 0 60px 0 60px;
+
     h1 {
         text-align: center;
         margin: 5%;
     }
-    .content-about{
+
+    .content-about {
         display: flex;
     }
-    .about-center img{
+
+    .about-center img {
         width: 300px;
         height: 400px;
         margin-top: -90px;
     }
+
     .about-left,
-    .about-right{
+    .about-right {
         margin-top: 30px;
+        line-height: 1.5;
+
+        button {
+            width: 200px;
+            padding: 15px;
+            font-size: 20px;
+            margin-top: 80px;
+            border-radius: 5px 5px 5px 5px;
+        }
+
+        h2 {
+            padding-bottom: 15px;
+        }
     }
+}
+@include responsive(Mobile){
+    nav{
+        width: 50%;
+        
+    }
+    .container {
+        display: flex;
+        background-image: url(/img/Homecafe.jpg);
+        height: 30%;
+        width:100%;
+        .text {
+            display: flex;
+            flex: 1;
+            h1{
+                font-size: 20px;
+            }
+        }
+        .cover-pic {
+            display: flex;
+            flex: 1;
+            margin: 12% 0 0 0;
+            padding: 20px;
+            .cover-sell img {
+                width: 30px;
+                height: 20px;
+            }
+    
+            .cover-sit img {
+                width: 30px;
+                height: 20px;
+            }
+            .cover-sell img, .cover-sit img {
+                border: 3px solid white;
+            }
+        }
+    }
+
+
 }
