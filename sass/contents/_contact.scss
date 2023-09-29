@@ -3,7 +3,7 @@
 @import "../Mixin/Responsive";
 .groupp{
     height: 1100px;
-    @include responsive(md){
+    @include responsive(Tablet){
         height: 1500px;
     }
     display: flexbox;
@@ -12,7 +12,7 @@
         // background: rgb(3, 3, 3);
         display: flex;
         .call{
-            @include responsive(md){
+            @include responsive(Tablet){
                 display: none;
             }
             height: 100px;
@@ -142,7 +142,7 @@
               }
         }
         p{
-            @include responsive(md){
+            @include responsive(Tablet){
                 display: none;
             }
             color: white;
@@ -151,7 +151,7 @@
             align-items: center;
             font-size: 15px;
         }
-        @include responsive(md){
+        @include responsive(Tablet){
             flex-direction: column;
             height: 400px;
 
@@ -177,12 +177,12 @@
                 // background-color: #fdfdfdd7;
                 width: 60%px;
                 height: 260px;
-                @include responsive(md){
+                @include responsive(Tablet){
                     height: 200px;
                     margin-left: 0;
                 }
                 img{
-                    @include responsive(md){
+                    @include responsive(Tablet){
                         width: 500px;
                         margin: -10% 0 0 -1% ;
                         
@@ -202,7 +202,7 @@
         }
         .text-contener{
             width: 50%;
-            @include responsive(md){
+            @include responsive(Tablet){
                 display: flex;
                 justify-content: center;  
                 margin-top: 30px;
@@ -217,7 +217,7 @@
                 font-size: 2.9rem;
 
             }
-            @include responsive(md){
+            @include responsive(Tablet){
                 font-size: 3.5rem;
                 margin-top: -70px;
                 // background-color: #030303;
@@ -305,7 +305,7 @@
     height: 700px;
     padding : 50px;
     display: flex;
-    @include responsive(md){
+    @include responsive(Tablet){
         flex-direction: column;
         height: 700px;
     }
@@ -313,7 +313,7 @@
         color: white;
         margin-top: -180px;
         height: 490px;
-        @include responsive(md){
+        @include responsive(Tablet){
             height: 400px;
             flex: none;
         }
@@ -378,7 +378,7 @@
                 
             .submit{
                 margin-top: 100px;
-                @include responsive(md){
+                @include responsive(Tablet){
                     margin-top: 30px;
                 }
                 a{
@@ -419,7 +419,7 @@
         border-radius: 20px;
         height: 550px;
         margin-top: -180px;
-        @include responsive(md){
+        @include responsive(Tablet){
             margin-top: 20px;
             height: 400px;
             flex: none;
@@ -442,7 +442,7 @@
             border-radius: 20px;
             width: 100%!important;
             height: 550px !important;
-            @include responsive(md){
+            @include responsive(Tablet){
                 height: 400px !important;
 
             }
@@ -454,7 +454,7 @@
 main{
     height: 550px;
     padding: 50px;
-    @include responsive(md){
+    @include responsive(Tablet){
         height: 470px;
     }
     .title-main{
@@ -486,19 +486,19 @@ main{
         text-align: center;
         width: 20%;
         height: 300px;
-        @include responsive(md){
+        @include responsive(Tablet){
             height: 200px;
         }
         
         p{
             margin-top: 20px;
-            @include responsive(md){
+            @include responsive(Tablet){
                 font-size: 80%;
             }
         }
         img{
             padding: 10px;
-            @include responsive(md){
+            @include responsive(Tablet){
 
                 margin: -50px 0 20px 0;
             }
