@@ -5,7 +5,6 @@ $breakpoint: (
     'lg': 992px,
     'xl': 1200px,
 );
-
 @mixin responsive($size){
     @media screen and (max-width: map-get($breakpoint, $size)) {
         @content;
