@@ -1,19 +1,178 @@
 
-.header{
-    height: 600px;
-    padding: 100px 50px 0 50px  ;
+
+@import "../Mixin/Responsive";
+.groupp{
+    height: 1000px;
+    @include responsive(md){
+        height: 1600px;
+    }
+    display: flexbox;
+    flex-direction: column;
+    .backgroun{
+        background: rgb(3, 3, 3);
+        display: flex;
+        p{
+            color: white;
+            height: 90px;
+            display: flex;
+            align-items: center;
+            font-size: 15px;
+        }
+        @include responsive(md){
+            flex-direction: column;
+            height: 400px;
+
+        }
+        // justify-content: center;
+        // align-items: center;
+        padding: 140px;
+        height: 300PX;
+        .image{
+            
+            flex: 1;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .back{
+                
+                margin-left: 35%;
+                background-color: #fdfdfdd7;
+                width: 70%;
+                height: 230px;
+                @include responsive(md){
+                    height: 200px;
+                    margin-left: 0;
+                }
+                img{
+                    box-shadow: 0 0 2em gray;
+                    margin: -12% 0 0 -12% ;
+                    width: 100%;
+                      
+                }
+            }
+        }
+        .text-contener{
+            flex: 1;
+            @include responsive(md){
+                display: flex;
+                justify-content: center;
+                
+            }
+            
+        }
+        .text-contener>span{
+            font-family: "Baloo Thambi", sans-serif;
+            font-size: 4.5rem;
+            @include responsive(md){
+                font-size: 3.5rem;
+            }
+            text-transform: uppercase;
+            animation: glow 3s ease-in-out infinite;
+            animation-delay: var(--daley);     
+         }
+        .text-contener>p{
+            font-family: "Baloo Thambi", sans-serif;
+            animation: glows 4s ease-in-out infinite;
+            animation-delay: var(--daley);     
+         }
+         
+         @keyframes glow {
+            0%,
+            100%{
+                color: var(--color);
+                text-shadow: 0 0 1px  pink, 0 0 50px  pink, 0 0 100px pink;
+                color: white;
+            }
+            20%,
+            80%{
+                color: rgb(43, 42, 42);
+                text-shadow: none;
+                
+            }
+         
+        }
+         @keyframes glows {
+            0%,
+            100%{
+                color: var(--color);
+                text-shadow: 0 0 1px  rgba(255, 192, 203, 0.952), 0 0 50px  rgba(255, 192, 203, 0.945), 0 0 100px rgba(255, 192, 203, 0.938);
+                color: white;
+            }
+            20%,
+            80%{
+                color: rgb(156, 153, 153);
+                text-shadow: none;
+                
+            }
+         
+        }
+        .text-contener span:nth-child(2){
+            animation-delay: 0.25s;
+        }
+        .text-contener span:nth-child(3){
+            animation-delay: 0.5s;
+        }
+        .text-contener span:nth-child(4){
+            animation-delay: 0.75s;
+        }
+        .text-contener span:nth-child(5){
+            animation-delay: 1s;
+        }
+        .text-contener span:nth-child(6){
+            animation-delay: 1.25s;
+        }
+        .text-contener span:nth-child(7){
+            animation-delay: 1.5s;
+        }
+        .text-contener span:nth-child(8){
+            animation-delay: 1.75s;
+        }
+        
+        .text-contener span:nth-child(9){
+            animation-delay: 2s;
+        }
+        
+        .text-contener span:nth-child(10){
+            animation-delay: 2.25s;
+        }
+        
+        .text-contener span:nth-child(11){
+            animation-delay: 2.5s;
+        }
+        
+        .text-contener p{
+            animation-delay: 0.25s;
+        }
+        
+    } 
+  .header{
+    height: 700px;
+    padding : 50px;
     display: flex;
+    @include responsive(md){
+        flex-direction: column;
+        height: 1000px;
+    }
     .input{
-        background-color: white;
+        color: white;
+        margin-top: -180px;
+        height: 490px;
+        @include responsive(md){
+            height: 400px;
+            flex: none;
+        }
+        background-color: rgba(44, 44, 44, 0.788);
         margin-left: 10px;
-        box-shadow: 0 0 2em rgb(187, 186, 186);
+        // box-shadow: 0 0 2em pink;
         padding: 30px;
         border-radius: 20px;
         margin-right: 20px;
         flex: 0.9;
         form{
             width: 100%;
-            height: 100%;
+            height: 600px;
             .title{
                 height: 70px;
             }
@@ -27,7 +186,11 @@
                     border-radius: 10px;
                     border: none;
                     background: #F0ECEC;
+                    
                 }
+                input:hover{
+                        box-shadow: 0 0 2em rgb(209, 209, 209);
+                    }
                 
             }
             .feedback{
@@ -43,30 +206,53 @@
                 font-size: 20px;
                 border: none;
                 background: #F0ECEC;
-            }  
+                }  
+                input:hover{
+                    box-shadow: 0 0 2em rgb(209, 209, 209);
+                }
                 }
                 
             .submit{
                 margin-top: 100px;
+                @include responsive(md){
+                    margin-top: 30px;
+                }
                 a{
                     text-decoration: none;
                     font-weight: bold;
                     color: white;
-                    padding: 20px 70px 20px 70px;                   border-radius: 7px;
+                    padding: 15px 70px 15px 70px; 
+                    @include responsive(md){
+                        padding: 9px 70px 9px 70px;
+                        font-size: 20px; 
+
+                    }                  
+                    border-radius: 7px;
                     font-size: 30px;
                     background-color: #DF7357;
                 }
                 a:hover{
-                    background-color: black;
+                    box-shadow: 0 0 2em rgb(209, 209, 209);
+                    background-color: white;
+                    color: black;
                 }
             }
             
         }
     }
+    .map:hover{
+          box-shadow: 0 0 2em rgb(187, 186, 186); 
+    }
     .map{
-        // padding-top: 30px;
+        border-radius: 20px;
+        height: 550px;
+        margin-top: -180px;
+        @include responsive(md){
+            margin-top: 20px;
+            height: 400px;
+            flex: none;
+        }
         flex: 1;
-        // background-color: aliceblue;
         .mapouter {
             position: relative;
             text-align: right;
@@ -81,14 +267,22 @@
             height:100%;
         }
         .gmap_iframe {
+            border-radius: 20px;
             width: 100%!important;
-            height: 100% !important;
+            height: 550px !important;
+            @include responsive(md){
+                height: 400px !important;
+
+            }
         }
     }
+}  
 }
+
 main{
-    height: 600px;
+    height: 700px;
     padding: 50px;
+
     .title-main{
         height: 170px;
         text-align: center;
@@ -99,7 +293,6 @@ main{
     .card-person{
         display: flex;
         justify-content: space-between;
-        
        .card{
         display: flex;
         flex-direction: column;
@@ -113,9 +306,9 @@ main{
         }
         img{
             margin: 20px;
-            height: 150px;
-            width: 150px;
+            width: 70%;
             border-radius: 50%;
+            
         }
        }
 
