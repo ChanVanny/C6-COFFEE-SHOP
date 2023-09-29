@@ -5,10 +5,8 @@ $breakpoint: (
     'Laptop': 1024px,
     'Desktop': 1200px,
 );
-
 @mixin responsive($size){
     @media screen and (max-width: map-get($breakpoint, $size)) {
         @content;
     }
 }
-
