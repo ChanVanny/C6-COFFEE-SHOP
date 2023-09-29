@@ -1,5 +1,8 @@
 
+
+@import "../Mixin/Responsive";
 .container-menu3 {
+
     // display: flex;
     // margin: 60px;
     display: flex;
@@ -8,21 +11,37 @@
     padding: 60px;
 
     .container-menu3-card{
+
+
+
         display: flex;
         justify-content: space-around;
 
         .card {
-            background-color:white;
-            // padding: 10px;
-            width: 300px;
+            background-color:#dcdcdc8d;
+            width: 350px;
+            border-radius: 10px;
+
+            &:hover{
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     
+            }
+
             .card-top {
+                    // justify-content: center;
+                    // display: flex;
                 img {
-                    width: 300px;
+                    width: 350px;
+                    // width: 250px;
+                    border-radius: 10px 10px 0 0;
+                    
                 }
             }
     
             .card-center {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
                 padding: 10px;
             }
             .card-button{
@@ -35,16 +54,6 @@
                     flex-direction: column;
                     gap: 10px;
     
-                    // button{
-                    //     background-color: #c64771;
-                    //     padding: 8px;
-                    //     border: none;
-                    //     border-radius: 3px;
-                    //     color: white;
-                    // }
-                    // img{
-                    //     width: 100px;
-                    // }
                 }
                 .card-button-right{
                     display: flex;
@@ -59,12 +68,15 @@
     
                 }
             }
-    
-    
         }
-    
-
+        // @include responsive(md){
+        //     display: flex;
+        //     flex-direction: column;
+        //     // display: none;
+        // }
 
     }
     
 }
+
+

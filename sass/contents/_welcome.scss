@@ -1,0 +1,58 @@
+body {
+    background-color: #00000088;
+}
+
+.welcom-main {
+    // background-color: pink;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.main {
+    background-color: gainsboro;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 800px;
+    gap: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 2em rgb(187, 186, 186);
+    // height: 300px;
+    padding: 30px;
+
+    .main-top {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        h1{
+            color: green;
+            font-size: 50px;
+        }
+    }
+
+    .main-center {
+        img {
+            width: 200px;
+        }
+    }
+
+    .main-right {
+        .main-a {
+            background-color: #da5480;
+            padding: 10px;
+            width: 80px;
+            border-radius: 5px;
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+
+    }
+
+}
