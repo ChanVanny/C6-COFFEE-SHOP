@@ -136,113 +136,173 @@ footer .discrib .locations p {
 }
 
 body {
-  background: rgba(255, 255, 255, 0.237);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
-.container1 {
-  background: url(/img/Homecafe.jpg);
+.container {
+  display: flex;
+  background-image: url(/img/Homecafe.jpg);
+  height: 80%;
+  width: 100%;
   background-position: center;
-  background-size: cover;
   background-repeat: no-repeat;
-  height: 500px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
 }
-.container1 .container1-left {
+.container .text {
+  flex: 2;
+  background: rgba(245, 222, 179, 0.141);
   color: white;
-  text-align: center;
+  border-radius: 10px 10px 10px 10px;
+  margin-left: 40px;
+}
+.container .text h1 {
+  font-size: 30px;
+  padding: 10px;
+}
+.container .text p {
+  font-size: 20px;
+}
+.container .text h1, .container .text p {
+  width: 80%;
+}
+.container .cover-pic {
+  display: flex;
+  flex: 1;
+  margin: 12% 0 0 0;
+  padding: 20px;
+}
+.container .cover-pic .cover-sell img {
+  width: 330px;
+  height: 200px;
+  margin: 70px -90px 0 0;
+  border-radius: 50px 0 0;
+}
+.container .cover-pic .cover-sit img {
+  width: 300px;
+  height: 200px;
+  margin: -85px 30px 0 -40px;
+  border-radius: 40px 40px 40px 40px;
+}
+.container .cover-pic .cover-sell img, .container .cover-pic .cover-sit img {
+  border: 3px solid white;
 }
 
 .card-promotion {
   display: flex;
-  margin: 0 60px 0 60px;
-  margin-top: 5%;
+  margin: 60px 60px 0 60px;
   justify-content: space-evenly;
-  background: rgba(218, 165, 32, 0.347);
+  background: rgba(212, 132, 132, 0.1294117647);
 }
 .card-promotion .card-left {
+  flex: 2;
   text-align: center;
-  margin-top: 20px;
-  line-height: 3;
+  margin-top: 50px;
 }
 .card-promotion .card-left .info-card {
   line-height: 2;
-  font-size: 20px;
 }
 .card-promotion .card-left .info-card h2 {
   color: #EC1313;
 }
-.card-promotion .card-left button {
-  width: 400px;
-  padding: 20px;
-  border-radius: 7px 7px 7px 7px;
-  margin-top: 5%;
-  border: none;
-}
-.card-promotion .card-left button h2 {
-  color: #EC1313;
+.card-promotion .card-left .box-dicount {
+  width: 200px;
+  margin-top: 50px;
   line-height: 2;
-  font-size: 40px;
+  background: #c64771;
+  padding: 10px;
+  border-radius: 0 30px 30px 0;
+}
+.card-promotion .card-left .box-dicount h3 {
+  font-size: 20px;
+}
+.card-promotion .card-left .box-dicount h2 {
+  color: white;
 }
 .card-promotion .crad-center {
+  flex: 1.5;
+  background-image: url(/img/pic-promotion.png);
   height: 350px;
   width: 300px;
-  background-image: url(/img/pic-promotion.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   margin: 10px;
-  border-radius: 50px 0 0 0;
+  border-radius: 80px 0 0 0;
 }
 .card-promotion .card-right {
+  flex: 1;
+  text-align: center;
   margin-top: 50px;
   line-height: 2;
-}
-.card-promotion .card-right h1 {
-  font-size: 20px;
 }
 .card-promotion .card-right h2 {
   width: 300px;
   color: #EC1313;
   font-size: 90px;
-}
-.card-promotion .card-right p {
-  font-size: 20px;
+  margin: auto;
 }
 .card-promotion .card-right button {
-  width: 400px;
-  background: #DF7357;
+  width: 300px;
   padding: 20px;
   font-size: 20px;
-  border-radius: 0 60px 0 60px;
   margin-left: 90px;
   border: none;
+  line-height: 1.5;
+  border-radius: 0 60px 0 60px;
+}
+.card-promotion .card-right button p {
+  color: black;
+  font-size: 20px;
 }
 
 .content-best-menu {
   text-align: center;
-  margin: 70px;
-  line-height: 2;
-  font-size: 30px;
+  line-height: 3;
+  margin-top: 60px;
 }
-.content-best-menu h2 {
-  font-size: 40px;
+.content-best-menu p {
+  font-size: 25px;
+  line-height: 1.5;
 }
 
 .group-famous-menu {
-  margin: 70px 60px 70px 60px;
-  font-size: 20px;
-  line-height: 1.5;
-  padding: 10px;
+  padding: 0 60px 0 60px;
 }
 .group-famous-menu .menu {
   display: flex;
-  width: 98%;
   background: rgba(212, 132, 132, 0.1294117647);
   margin: auto;
-  margin-top: 40px;
-  padding: 10px;
+  margin-top: 60px;
+  padding: 20px;
 }
-.group-famous-menu .menu .text-infor {
-  flex: 1;
+.group-famous-menu .menu .text-info {
+  flex: 2;
+  line-height: 1.5;
+}
+.group-famous-menu .menu .text-info h2 {
+  display: flex;
+  width: 200px;
+  height: 60px;
+  color: white;
+  background: #DF7357;
+  align-items: center;
+  border-radius: 0 0 90px 0;
+  margin: -20px 0 0 -20px;
+  padding-left: 15px;
+}
+.group-famous-menu .menu .text-info p {
+  margin-top: 20px;
+}
+.group-famous-menu .menu .text-info button {
+  width: 200px;
+  padding: 15px;
+  margin-top: 80px;
+  font-size: 20px;
+  border-radius: 5px 5px 5px 5px;
 }
 .group-famous-menu .menu .group-menu {
   display: flex;
@@ -250,29 +310,10 @@ body {
   justify-content: end;
   margin: auto;
   gap: 8px;
-  padding: 30px;
-}
-.group-famous-menu .menu .text-infor h3 {
-  width: 200px;
-  background: #DF7357;
-  padding: 20px;
-  font-size: 30px;
-  margin: -10px 0 30px -10px;
-  border-radius: 0 0 90px;
-}
-.group-famous-menu .menu .text-infor button {
-  width: 200px;
-  padding: 20px;
-  margin-top: 10%;
-  color: white;
-  background: #DF7357;
-  border: none;
-  border-radius: 5px 5px 5px 5px;
 }
 
 .about {
-  width: 80%;
-  margin: auto;
+  padding: 0 60px 0 60px;
 }
 .about h1 {
   text-align: center;
@@ -289,8 +330,56 @@ body {
 .about .about-left,
 .about .about-right {
   margin-top: 30px;
+  line-height: 1.5;
+}
+.about .about-left button,
+.about .about-right button {
+  width: 200px;
+  padding: 15px;
+  font-size: 20px;
+  margin-top: 80px;
+  border-radius: 5px 5px 5px 5px;
+}
+.about .about-left h2,
+.about .about-right h2 {
+  padding-bottom: 15px;
 }
 
+@media screen and (max-width: 620px) {
+  nav {
+    width: 50%;
+  }
+  .container {
+    display: flex;
+    background-image: url(/img/Homecafe.jpg);
+    height: 30%;
+    width: 100%;
+  }
+  .container .text {
+    display: flex;
+    flex: 1;
+  }
+  .container .text h1 {
+    font-size: 20px;
+  }
+  .container .cover-pic {
+    display: flex;
+    flex: 1;
+    margin: 12% 0 0 0;
+    padding: 20px;
+  }
+  .container .cover-pic .cover-sell img {
+    width: 30px;
+    height: 20px;
+  }
+  .container .cover-pic .cover-sit img {
+    width: 30px;
+    height: 20px;
+  }
+  .container .cover-pic .cover-sell img, .container .cover-pic .cover-sit img {
+    border: 3px solid white;
+  }
+}
 select {
   border: none;
 }
