@@ -1,5 +1,5 @@
 @import "../Mixin/Responsive";
-
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Marck+Script&family=Pacifico&family=Sedgwick+Ave+Display&family=Young+Serif&display=swap'); 
 .groupp {
     height: 1100px;
     display: flexbox;
@@ -239,44 +239,44 @@
 
         }
         .text-contener>span:nth-child(4){
-            font-size: 2.3rem;
+            font-size: 2.6rem;
             @include responsive(Tablet) {
                 font-size: 2.0rem;
 
             }
         }
         .text-contener>span:nth-child(5){
-            font-size: 2.3rem;
+            font-size: 2.6rem;
             @include responsive(Tablet) {
                 font-size: 2.0rem;
 
             }
         }
         .text-contener>span:nth-child(6){
-            font-size: 2.3rem;
+            font-size: 2.6rem;
             @include responsive(Tablet) {
                 font-size: 2.0rem;
 
             }
         }
         .text-contener>span:nth-child(7){
-            font-size: 2.3rem;
+            font-size: 2.6rem;
             @include responsive(Tablet) {
                 font-size: 2.0rem;
 
             }
         }
         .text-contener>span:nth-child(8){
-            font-size: 2.3rem;
+            font-size: 2.6rem;
             @include responsive(Tablet) {
                 font-size: 2.0rem;
 
             }
         }
         .text-contener>span {
-
+            font-family: 'Marck Script', cursive;
             font-weight: bold;
-            font-size: 3.4rem;
+            font-size: 4.9rem;
 
             @include responsive(Tablet) {
                 font-size: 3rem;
@@ -288,7 +288,7 @@
         }
 
         .text-contener>p {
-            // font-family: 'Sedgwick Ave Display', cursive;
+            font-family: 'Marck Script', cursive;
             font-weight: bold;
             animation: glows 4s ease-in-out infinite;
             animation-delay: var(--daley);
@@ -394,6 +394,7 @@
             flex-direction: column;
         }
         .input {
+            
             color: white;
             margin-top: -180px;
             height: 490px;
@@ -415,6 +416,10 @@
 
                 .title {
                     height: 70px;
+                    h2{
+
+                        font-family: 'Marck Script', cursive;
+                    }
                 }
 
                 .fullname,
@@ -422,6 +427,7 @@
                     margin-bottom: 30px;
 
                     input {
+                      
                         width: 90%;
                         height: 50px;
                         padding-left: 30PX;
@@ -447,6 +453,7 @@
 
                     h3 {
                         height: 40px;
+                        font-family: 'Marck Script', cursive;
                     }
 
                     input {
@@ -472,6 +479,7 @@
                     margin-top: 100px;
 
                     a {
+                        font-family: 'Marck Script', cursive;
                         text-decoration: none;
                         font-weight: bold;
                         color: white;
@@ -565,6 +573,9 @@ main {
 
     }
     .title-main {
+        h2{
+            font-family: 'Marck Script', cursive;
+        }
         height: 170px;
         @include responsive(Mobile){
             height: 90px;
