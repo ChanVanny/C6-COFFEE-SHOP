@@ -1,15 +1,28 @@
 
+@import "../Mixin/Responsive";
 footer{
-    padding: 50px;
+    padding: 10px 40px 10px 40px;
+    @include responsive(Mobile){
+        padding: 10px 5px 10px 5px;
+
+    }
+
     background-color: #191414;
     color: white ;
-    height: 200px;
+    height: 180px;
     display: flex;
     justify-content: space-around;
     .discrib{
+        @include responsive(Mobile){
+            font-size: 12px;
+        }
+
         width: 250px;
         h2{
-            height: 70px;
+            @include responsive(Mobile){
+                font-size: 16px;
+            }
+            height: 60px;
             display: flex;
             align-items: center;
             color: #DF7357;
@@ -17,24 +30,44 @@ footer{
         .location,.phone,.email-{
             display: flex;
             gap: 5px;
-            margin-bottom: 30px;
+            margin-bottom: 5px;
+            @include responsive(Mobile){
+               font-size: 12px;
+            }
+
         }
         .soilmidia{
+            
             display: flex;
             justify-content: start;
-            gap: 20px;
+            gap: 15px;
             i{
-                margin-top: 30px;
+                transition: box-shadow 0.1s ease-in-out, transform 1s;
+
+        &:hover {
+
+            box-shadow: rgba(224, 224, 224, 0.25) 0px 54px 55px, rgba(206, 205, 205, 0.245) 0px -12px 30px, rgba(202, 201, 201, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(206, 205, 205, 0.09) 0px -3px 5px;
+            transform: translateY(-10px);
+        }
+                margin-top: 10px;
                 font-size: 25px;
+                @include responsive(Mobile){
+                    font-size: 100%;
+
+                }
                 border: 1.5px solid white;
                 padding: 3px;
             }
 
         }
         .locations{
+            // background-color: #DF7357;
             gap: 30px;
             p{
                 height: 60px;
+                @include responsive(Mobile){
+                    font-size: 12px;
+                }
             }
         }
     }

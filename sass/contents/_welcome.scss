@@ -1,9 +1,8 @@
 body {
-    background-color: #00000088;
+    background-color: #00000078;
 }
 
 .welcom-main {
-    // background-color: pink;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -11,21 +10,27 @@ body {
 }
 
 .main {
-    background-color: gainsboro;
-    display: flex;
-    flex-direction: column;
+    background-color: $card-color;
+    @include flex;
     align-items: center;
     text-align: center;
     width: 800px;
     gap: 30px;
     border-radius: 10px;
     box-shadow: 0 0 2em rgb(187, 186, 186);
-    // height: 300px;
     padding: 30px;
 
+    @include responsive(Tablet){
+        width: 600px;
+    }
+
+    @include responsive(Mobile){
+        width: 500px;
+        gap: 10px;
+    }
+
     .main-top {
-        display: flex;
-        flex-direction: column;
+        @include flex;
         gap: 10px;
 
         h1{
@@ -37,19 +42,29 @@ body {
     .main-center {
         img {
             width: 200px;
+            @include responsive(Tablet){
+                width: 150px;
+                
+            }
+            @include responsive(Mobile){
+                width: 100px;
+            }
         }
     }
 
     .main-right {
         .main-a {
-            background-color: #da5480;
+            background-color: $button-color;
             padding: 10px;
             width: 80px;
             border-radius: 5px;
+            &:hover{
+                background-color: $dark-color;
+            }
 
             a {
                 text-decoration: none;
-                color: white;
+                color: $white-color;
             }
         }
 

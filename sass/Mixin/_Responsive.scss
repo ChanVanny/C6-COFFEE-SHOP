@@ -1,8 +1,8 @@
 
 $breakpoint: ( 
     'Mobile': 620px,
-    'Tablet': 720px,
-    'Laptop': 1024px,
+    'Tablet': 820px,
+    'lg': 1024px,
     'Desktop': 1200px,
 );
 @mixin responsive($size){
@@ -10,3 +10,8 @@ $breakpoint: (
         @content;
     }
 }
+@mixin flex{
+    display: flex;
+    flex-direction: column;
+}
+
