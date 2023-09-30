@@ -1,17 +1,26 @@
 
 @import "../Mixin/Responsive";
 footer{
-    padding: 10px 50px 10px 50px;
+    padding: 10px 40px 10px 40px;
+    @include responsive(Mobile){
+        padding: 10px 5px 10px 5px;
+
+    }
+
     background-color: #191414;
     color: white ;
     height: 180px;
     display: flex;
     justify-content: space-around;
     .discrib{
+        @include responsive(Mobile){
+            font-size: 12px;
+        }
+
         width: 250px;
         h2{
-            @include responsive(md){
-                font-size: 17px;
+            @include responsive(Mobile){
+                font-size: 16px;
             }
             height: 60px;
             display: flex;
@@ -22,16 +31,15 @@ footer{
             display: flex;
             gap: 5px;
             margin-bottom: 5px;
-            @include responsive(md){
-                font-size: 12px;
+            @include responsive(Mobile){
+               font-size: 12px;
             }
+
         }
         .soilmidia{
+            
             display: flex;
             justify-content: start;
-            @include responsive(md){
-                gap: 5px;
-            }
             gap: 15px;
             i{
                 transition: box-shadow 0.1s ease-in-out, transform 1s;
@@ -43,16 +51,21 @@ footer{
         }
                 margin-top: 10px;
                 font-size: 25px;
+                @include responsive(Mobile){
+                    font-size: 100%;
+
+                }
                 border: 1.5px solid white;
                 padding: 3px;
             }
 
         }
         .locations{
+            // background-color: #DF7357;
             gap: 30px;
             p{
                 height: 60px;
-                @include responsive(md){
+                @include responsive(Mobile){
                     font-size: 12px;
                 }
             }
