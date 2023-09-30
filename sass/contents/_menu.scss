@@ -1,29 +1,30 @@
 
 
 select{
-    // padding: 0;
     border: none;
     background: none;
 }
-
-
+.container-menu{
+    padding: 40px;
+}
 .container-menu1{
     background: url(/img/MenuBackground2.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     .header{
-        display: flex;
-        flex-direction: column;
+        @include flex;
         text-align: center;
         gap: 20px;
-        margin-top: 40px;
-        // justify-content: center;
 
         h1{
             color: white;
+            font-size: 40px;
         }
 
         .search-container{
@@ -33,7 +34,7 @@ select{
                 width: 350px;
                 border-radius: 10px;
                 border: none;
-                background-color: #00000062;
+                background-color:rgba(255, 255, 255, 0.705);
             }
         }
 
@@ -41,45 +42,34 @@ select{
             padding: 20px;
             a{
                 text-decoration: none;
-                // font-weight: bold;
                 color: gainsboro;
                 padding: 15px 30px;
                 border-radius: 7px;
-                // font-size: 10px;
                 background-color: rgba(0, 0, 0, 0.548);
             }
             a:hover{
-                background-color: #e2608b92;
+                background-color: $button-color;
             }
         }
     }
 
 }
-
 .container-menu2-left{
-    padding-top: 70px;
+    padding: 50px 0;
     text-align: center;
     
     h1{
-        color: rgb(235, 100, 145);
+        color: $white-color;
     }
 
 }
-
-
 .container-menu3-header{
     h1{
         text-align: center;
         align-items: center;
-        color: rgb(210, 64, 112)
+        color: $button-color
 
     }
-}
-
-.container5{
-    // margin: 60px;
-    padding: 60px;
-    padding-bottom: 80px;
 }
 @import "../Components/coffeecard";
 @import "../Components/cakecard";

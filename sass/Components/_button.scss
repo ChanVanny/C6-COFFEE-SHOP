@@ -1,13 +1,16 @@
 
 button{
-    background-color: #c64771;
+    background:$button-color;
     padding: 8px;
     border: none;
     border-radius: 3px;
-    color: white;
+    color: $white-color;
+    &:hover{
+        background-color:$dark-color;
+    }
 
     a{
         text-decoration: none;
-        color: white;
+        color: $white-color;
     }
 }
