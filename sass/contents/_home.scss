@@ -1,173 +1,314 @@
-@import "../Mixin/Responsive";
-
-* {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-}
-body{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-}
+ @import "../Mixin/Responsive";
 
 .container {
+    @include responsive(Mobile) {
+        height: 50%;
+    }
+    @include responsive(Tablet){
+        height: 60%;
+    }
     display: flex;
     background-image: url(/img/Homecafe.jpg);
-    height: 80%;
-    width: 100%;
+    height: 500px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
-
+    padding: 10px;
     .text {
-        flex: 2;
-        background:rgba(245, 222, 179, 0.141);
+        @include responsive(Tablet){
+            width: 90%;
+        }
+        flex: 1.5;
+        background: rgba(245, 222, 179, 0.141);
         color: white;
         border-radius: 10px 10px 10px 10px;
         margin-left: 40px;
-        h1{
+        h1 {
+            @include responsive(Mobile) {
+                font-size: 15px;
+            }
+            @include responsive(Tablet){
+                font-size: 18px;    
+            }
             font-size: 30px;
             padding: 10px;
         }
-        p{
-            font-size: 20px;
+         p {
+            @include responsive(Mobile) {
+                font-size: 15px;   
+            }
+            @include responsive(Tablet){
+                font-size: 15px;
+            }
+             font-size: 20px;
         }
-        h1,p{
+        h1,
+         p {
             width: 80%;
-        }
 
+        }
     }
     .cover-pic {
+        @include responsive(Mobile) {
+           padding-top: 10%;  
+        }
+        @include responsive(Tablet){
+            margin-top: 20%;
+        }
         display: flex;
         flex: 1;
-        margin: 12% 0 0 0;
-        padding: 20px;
+        justify-content: end;
+        align-items: center;
+        margin: 10% 0 0 0;
         .cover-sell img {
-            width: 330px;
+            @include responsive(Mobile) {
+                width: 150px;
+                height: 100px;
+                margin-left: 10%;
+            }
+            @include responsive(Tablet){
+                width: 150px;
+                height: 100px;
+            }
+            width: 250px;
             height: 200px;
-           margin: 70px -90px 0 0;
-           border-radius: 50px 0  0 ;
+            margin-left: 10%;
+
         }
 
         .cover-sit img {
-            width: 300px;
+            @include responsive(Mobile) {
+                width: 150px;
+                height: 100px;
+            }
+            @include responsive(Tablet){
+                width: 150px;
+                height: 100px;
+            }
+            width: 250px;
             height: 200px;
-            margin: -85px 30px 0 -40px;
-            border-radius: 40px 40px 40px 40px;
-        }
-        .cover-sell img, .cover-sit img {
+            margin: -90% 30px 0 -40px;
+         }
+
+        .cover-sell img,
+        .cover-sit img {
             border: 3px solid white;
         }
     }
 }
-
-.card-promotion {
-    display: flex;
-    margin: 60px 60px 0 60px;
-    justify-content: space-evenly;
-    background: #d4848421;
-
-    .card-left {
-        flex: 2;
-        text-align: center;
-        margin-top: 50px;
-
-        .info-card {
-            line-height: 2;
-
-            h2 {
-                color: #EC1313;
+.card-promotion{
+    @include responsive(Mobile) {
+        width: 90%;
+    }
+    @include responsive(Tablet){
+        width: 90%;
+        margin-top: 10%;
+    }
+    background:white;
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 5px 5px 5px 5px;
+    .title{
+        padding:0 0  60px 0;
+        h1{
+            @include responsive(Mobile){
+                padding:10px;
             }
+            @include responsive(Tablet){
+                padding: 30px;  
+             }
+            text-align: center;
+            padding-top: 20px;
+            color:red;
         }
-
-        .box-dicount {
-            width: 200px;
-            margin-top: 50px;
-            line-height: 2;
-            background: #c64771;
-            padding: 10px;
-            border-radius: 0 30px 30px 0;
-
-            h3 {
-                font-size: 20px;
+    } 
+    .content-promotion{
+        display: flex; 
+       }
+        .pic{
+            display: flex;
+            flex: 1;
+            .pic-coffee{
+             img{
+                @include responsive(Mobile) {
+                    width: 250px;
+                    height: 250px;
+                    margin-left: -15%;
+                }
+                @include responsive(Tablet){
+                    width: 350px;
+                    height: 300px;
+                    margin-left: -15%;   
+                }
+                 width: 200px;
+                        height: 250px;
+                        margin-top: -5%;
+                        margin-left: -100%;
+                 width: 400px;
+                 height: 350px;
+                 margin-top: -30%;
+                margin-left:5%;
+             }
             }
-
-            h2 {
-                color: white;
+           .pic-tea {
+                img{
+                    @include responsive(Mobile) {
+                        width: 200px;
+                        height: 250px;
+                        margin-top: -5%;
+                        margin-left: -100%;
+                    }
+                    @include responsive(Tablet){
+                        width: 250px;
+                        height: 300px;
+                        margin-left: -100%;
+                        
+                    }
+                    width: 300px;
+                    height: 350px;
+                    margin-left:-55%;
+                    margin-top: -30%;
+                }
+           }
+        }
+        .text-info-promotion{
+            flex: 2;
+            margin-left: -10%;
+            @include responsive(Mobile) {  
+                margin-left: -40%;
+                margin-top: -5%;
+            }
+            @include responsive(Tablet){
+                margin-left: -50%; 
+                margin-top: -10%;
+             }
+            .text-discount{
+                h1{
+                    @include responsive(Mobile) {
+                        font-size: 60px;
+                    }
+                    font-size: 100px;
+                    color: red;
+                    span{
+                        @include responsive(Mobile) {
+                            font-size: 30px;
+                        }
+                        font-size: 40px;
+                    }
+                }
+                p{
+                    font-size: 20px;
+                }
+            }
+            .text-free{
+                h1{
+                    font-size: 30px;
+                    color: red;
+                    padding: 10px;
+                }
+                .tex-input{
+                    line-height: 1.5;              
+                }
+            }
+            button{
+                @include responsive(Mobile) {
+                    width: 100px;
+                    margin-left: -10%;
+                    border-radius: 2px 2px 2px 2px ;
+                }
+                @include responsive(Tablet){
+                    width: 208.5px;
+                    padding: 20px;
+         
+                 }
+                width: 300px;
+                margin-left: 38.5%;
+                margin-bottom: 20px;
+                padding: 40px;
+                border-radius: 90px 0 0 0;
+                .text-add{
+                    p{
+                        font-size: 20px;
+                    }
+                    span{
+                        font-size: 30px;
+                    }
+                }
             }
         }
     }
-
-    .crad-center {
-        flex: 1.5;
-        background-image: url(/img/pic-promotion.png);
-        height: 350px;
-        width: 300px;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        margin: 10px;
-        border-radius: 80px 0 0 0;
-    }
-
-    .card-right {
-        flex: 1;
-        text-align: center;
-        margin-top: 50px;
-        line-height: 2;
-
-        h2 {
-            width: 300px;
-            color: #EC1313;
-            font-size: 90px;
-            margin: auto;
-        }
-
-        button {
-            width: 300px;
-            padding: 20px;
-            font-size: 20px;
-            margin-left: 90px;
-            border: none;
-            line-height: 1.5;
-            border-radius: 0 60px 0 60px;
-
-            p {
-                color: black;
-                font-size: 20px;
-            }
-        }
-    }
-}
-
 .content-best-menu {
+    @include responsive(Mobile) {
+        line-height: 1.5;
+    }
+    @include responsive(Tablet){
+        margin-top: 3%;
+     }
     text-align: center;
     line-height: 3;
     margin-top: 60px;
-
+    h2{
+        @include responsive(Tablet){
+            font-size: 30px;
+         }
+        padding: 20px;
+        color: white;
+    }
     p {
+        @include responsive(Mobile) {
+            line-height: 1.5;
+            font-size: 17px;
+        }
+        @include responsive(Tablet){
+            font-size: 20px; 
+         }
         font-size: 25px;
         line-height: 1.5;
     }
-}
-.group-famous-menu {
-    padding: 0 60px 0 60px;
+ }
 
+ .group-famous-menu {
+    @include responsive(Mobile) {
+        padding: 0 20px 0 20px;
+    }
+    padding: 0 60px 0 60px;
     .menu {
+        @include responsive(Mobile) {
+            padding:10px;
+            border-radius: 5px 5px 5px 5px ;
+            gap: 20px; 
+        }
+        @include responsive(Tablet){
+            border-radius: 5px 5px 5px 5px ;
+                
+        }
         display: flex;
-        background: #d4848421;
+        background: ghostwhite;
         margin: auto;
         margin-top: 60px;
         padding: 20px;
 
         .text-info {
-            flex: 2;
-            line-height: 1.5;
-
+            flex: 1.5;
+            line-height: 1.3;
+            width: 60%;
             h2 {
+                @include responsive(Mobile) {
+                    width: 100px;
+                    height: 30px;
+                    font-size:15px;
+                    border-radius: 3px 3px 3px 3px;
+                    margin: auto;
+                    text-align: center;
+                }
+                @include responsive(Tablet){
+                    width: 150px;
+                    height: 40px;
+                    font-size:15px;
+                 }
                 display: flex;
                 width: 200px;
                 height: 60px;
@@ -177,55 +318,135 @@ body{
                 border-radius: 0 0 90px 0;
                 margin: -20px 0 0 -20px;
                 padding-left: 15px;
+                cursor: pointer;
             }
 
             p {
                 margin-top: 20px;
             }
-
             button {
+                @include responsive(Mobile) {
+                    width: 100px;
+                    padding: 5px;
+                    font-size: 10px;
+                    margin-top: 13px;
+                }
+                @include responsive(Tablet){
+                    width: 150px;
+                    height: 40px;
+                    font-size:15px;
+    
+                 }
                 width: 200px;
                 padding: 15px;
                 margin-top: 80px;
                 font-size: 20px;
                 border-radius: 5px 5px 5px 5px;
+                a:hover{
+                    color: black;
+                }
+            }
+            button:hover{
+                background:brown;
             }
         }
 
         .group-menu {
+            @include responsive(Mobile) {
+                justify-content: center;
+            }
+            position: relative;
             display: flex;
-            flex: 1;
+            flex: 2;
             justify-content: end;
             margin: auto;
             gap: 8px;
+
+            img {
+                @include responsive(Mobile) {
+                    width: 30%;
+                }
+                width: 30%;
+                transition: 0.3s;
+                cursor: pointer;
+
+                &:hover {
+                    box-shadow: 0 0 30px rgba(123, 123, 123, 0.772);
+                }
+            }
         }
     }
 }
 
 .about {
-    padding: 0 60px 0 60px;
-
+    @include responsive(Mobile) {
+        padding: 0 20px 20px 20px ;
+    }
+    @include responsive(Tablet){
+        padding: 0 60px 60px 60px ;
+     }
+    padding: 0 60px 60px 60px;
+    
     h1 {
+        @include responsive(Mobile) {
+            font-size: 30px;
+        }
+        @include responsive(Tablet){
+            font-size: 30px;
+         }
         text-align: center;
-        margin: 5%;
+        padding: 10% 0 15% 0;
+        color: white;
     }
 
     .content-about {
         display: flex;
     }
 
-    .about-center img {
-        width: 300px;
-        height: 400px;
-        margin-top: -90px;
+    .about-center {
+        margin-top: -15%;
+        img {
+            @include responsive(Mobile) {
+                width: 150px;
+                height: 250px;
+            }
+            @include responsive(Tablet){
+                width: 200px;
+                height: 300px; 
+                margin-top: -5%;     
+             }
+            width: 300px;
+            height: 400px;
+        }
+    }
+
+    .about-right {
+        margin-left: 40px;
     }
 
     .about-left,
     .about-right {
+        @include responsive(Mobile) {
+            p{
+                font-size: 15px;
+            }
+        }
         margin-top: 30px;
         line-height: 1.5;
 
         button {
+            @include responsive(Mobile) {
+                width: 100px;
+                padding: 10px;
+                font-size: 20px;
+                margin-top: 10px;
+            }
+            @include responsive(Tablet){
+                width: 100px;
+                padding: 10px;
+                font-size: 15px;
+                margin-top: 10px;
+            }
             width: 200px;
             padding: 15px;
             font-size: 20px;
@@ -234,46 +455,22 @@ body{
         }
 
         h2 {
+            @include responsive(Mobile) {
+                font-size: 20px;
+            }
+
             padding-bottom: 15px;
         }
     }
 }
-@include responsive(Mobile){
-    nav{
-        width: 50%;
-        
-    }
-    .container {
-        display: flex;
-        background-image: url(/img/Homecafe.jpg);
-        height: 30%;
-        width:100%;
-        .text {
-            display: flex;
-            flex: 1;
-            h1{
-                font-size: 20px;
-            }
-        }
-        .cover-pic {
-            display: flex;
-            flex: 1;
-            margin: 12% 0 0 0;
-            padding: 20px;
-            .cover-sell img {
-                width: 30px;
-                height: 20px;
-            }
-    
-            .cover-sit img {
-                width: 30px;
-                height: 20px;
-            }
-            .cover-sell img, .cover-sit img {
-                border: 3px solid white;
-            }
-        }
-    }
 
 
-}
+ // @include responsive(Tablet){
+
+ // }
+ // @include responsive(Laptop){
+
+ // }
+ // @include responsive(Destop){
+
+ // }
