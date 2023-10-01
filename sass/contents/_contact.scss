@@ -5,7 +5,7 @@
     display: flexbox;
     flex-direction: column;
     @include responsive(Mobile){
-        height: 1700px;
+        height: 1300px;
 
     }
     .backgroun {
@@ -43,7 +43,7 @@
 
                         text-align:center;
                         text-decoration:none;
-                        color:#faf8f8;
+                        color: $white-color;
                         margin:0 15px 0 0;
                         transition:.5s;
 
@@ -58,7 +58,7 @@
                     a span:nth-child(3) {
                         width: 100%;
                         height: 3px;
-                        background: #030303;
+                        background: $dark-color;
                     }
 
                     a span:nth-child(1) {
@@ -169,18 +169,17 @@
 
         p {
 
-            color: white;
+            color: $white-color;
             height: 90px;
-            display: flex;
-            align-items: center;
+           @include flex;
             font-size: 15px;
         }
 
         justify-content: center;
         align-items: center;
-        padding: 40px 40px 0 40px;
+        padding: 40px 50px 0 50px;
         height: 600PX;
-        background-color: black;
+        background-color: $dark-color;
         @include responsive(Tablet){
             padding: 40px 20px 0 20px;
             
@@ -196,14 +195,12 @@
             flex: 50%;
             // background-color: red;
             height: 100%;
-            display: flex;
-            flex-direction: column;
+            @include flex;
             justify-content: center;
             align-items: center;
 
             .back {
                 margin-left: 60px;
-                // background-color: #fdfdfdd7;
                 width: 390px;
                 height: 260px;
                 margin-top: -70px;
@@ -239,47 +236,70 @@
 
         }
         .text-contener>span:nth-child(4){
-            font-size: 2.3rem;
+            font-size: 2.9rem;
             @include responsive(Tablet) {
-                font-size: 2.0rem;
+                font-size: 2.3rem;
+
+            }
+            @include responsive(Mobile) {
+                font-size: 1.5rem;
 
             }
         }
         .text-contener>span:nth-child(5){
-            font-size: 2.3rem;
+            font-size: 2.9rem;
             @include responsive(Tablet) {
-                font-size: 2.0rem;
+                font-size: 2.3rem;
+
+            }
+            @include responsive(Mobile) {
+                font-size: 1.5rem;
 
             }
         }
         .text-contener>span:nth-child(6){
-            font-size: 2.3rem;
+            font-size: 2.9rem;
             @include responsive(Tablet) {
-                font-size: 2.0rem;
+                font-size: 2.3rem;
+
+            }
+            @include responsive(Mobile) {
+                font-size: 1.5rem;
 
             }
         }
         .text-contener>span:nth-child(7){
-            font-size: 2.3rem;
+            font-size: 2.9rem;
             @include responsive(Tablet) {
-                font-size: 2.0rem;
+                font-size: 2.3rem;
+
+            }
+            @include responsive(Mobile) {
+                font-size: 1.5rem;
 
             }
         }
         .text-contener>span:nth-child(8){
-            font-size: 2.3rem;
+            font-size: 2.9rem;
             @include responsive(Tablet) {
-                font-size: 2.0rem;
+                font-size: 2.3rem;
+
+            }
+            @include responsive(Mobile) {
+                font-size: 1.5rem;
 
             }
         }
         .text-contener>span {
-
             font-weight: bold;
-            font-size: 3.4rem;
+            font-size: 4.9rem;
 
             @include responsive(Tablet) {
-                font-size: 3rem;
+                font-size: 3.4rem;
+            }
+            @include responsive(Mobile) {
+                font-size: 2.5rem;
+
             }
 
             text-transform: uppercase;
@@ -288,11 +308,9 @@
         }
 
         .text-contener>p {
-            // font-family: 'Sedgwick Ave Display', cursive;
-            font-weight: bold;
             animation: glows 4s ease-in-out infinite;
             animation-delay: var(--daley);
-
+            font-family: 'Playball', cursive;;
             @include responsive(Tablet) {
                 font-size: 11px;
             }
@@ -303,8 +321,8 @@
             0%,
             100% {
                 color: var(--color);
-                text-shadow: 0 0 1px pink, 0 0 50px pink, 0 0 100px pink;
-                color: PINK;
+                text-shadow: 0 0 1px $mian-color, 0 0 50px $mian-color, 0 0 100px $mian-color;
+                color: $mian-color;
             }
 
             20%,
@@ -322,7 +340,7 @@
             100% {
                 color: var(--color);
                 text-shadow: 0 0 1px rgba(255, 192, 203, 0.952), 0 0 50px rgba(255, 192, 203, 0.945), 0 0 100px rgba(255, 192, 203, 0.938);
-                color: pink;
+                color: $mian-color;
             }
 
             20%,
@@ -382,7 +400,6 @@
 
     .header {
         height: 750px;
-        // background-color: #1da1f2;
         padding: 50px;
         display: flex;
         @include responsive(Tablet){
@@ -394,18 +411,25 @@
             flex-direction: column;
         }
         .input {
-            color: white;
+            
+            color: $mian-color;
             margin-top: -180px;
             height: 490px;
+            font-size: 14px;
+            @include responsive(Tablet){
+                font-size: 11px;
+
+            }
+
             @include responsive(Mobile){
                 margin-top: -80px;
+                font-size: 10px;
 
             }
             background-color: rgba(44, 44, 44, 0.788);
             margin-left: 10px;
-            // box-shadow: 0 0 2em pink;
             padding: 30px;
-            border-radius: 20px;
+            border-radius: 10px;
             margin-right: 20px;
             flex: 0.9;
 
@@ -422,6 +446,7 @@
                     margin-bottom: 30px;
 
                     input {
+                      
                         width: 90%;
                         height: 50px;
                         padding-left: 30PX;
@@ -443,12 +468,10 @@
                 }
 
                 .feedback {
-                    margin-bottom: 40px;
-
-                    h3 {
-                        height: 40px;
+                    h1{
+                        height: 50px;
                     }
-
+                    margin-bottom: 40px;
                     input {
                         width: 90%;
                         height: 70px;
@@ -461,7 +484,7 @@
 
                         &:hover {
 
-                            box-shadow: rgba(250, 249, 249, 0.25) 0px 54px 55px, rgba(255, 254, 254, 0.245) 0px -12px 30px, rgba(250, 249, 249, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(253, 253, 253, 0.09) 0px -3px 5px;
+                            box-shadow: rgba(192, 191, 191, 0.11) 0px 54px 55px, rgba(255, 254, 254, 0.096) 0px -12px 30px, rgba(250, 249, 249, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(253, 253, 253, 0.09) 0px -3px 5px;
                             transform: translateY(-10px);
                         }
                     }
@@ -474,12 +497,20 @@
                     a {
                         text-decoration: none;
                         font-weight: bold;
-                        color: white;
+                        color: $mian-color;
                         padding: 15px 70px 15px 70px;
-
+                        @include responsive(Tablet){
+                            font-size: 25px;
+            
+                        }
+            
+                        @include responsive(Mobile){
+                            font-size: 20px;
+            
+                        }
                         border-radius: 7px;
                         font-size: 30px;
-                        background-color: #DF7357;
+                        background-color: $button-color;
                         transition: box-shadow 0.1s ease-in-out, transform 1s;
 
                         &:hover {
@@ -502,8 +533,9 @@
                         box-shadow: rgba(250, 249, 249, 0.25) 0px 54px 55px, rgba(255, 254, 254, 0.245) 0px -12px 30px, rgba(250, 249, 249, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(253, 253, 253, 0.09) 0px -3px 5px;
                         transform: translateY(-10px);
                     } 
-            border-radius: 20px;
+            border-radius: 10px;
             height: 550px;
+            // background-color: #c32aa3;
             margin-top: -180px;
             @include responsive(Mobile){
                 border-radius: 0%;
@@ -531,7 +563,7 @@
             }
 
             .gmap_iframe {
-                border-radius: 20px;
+                border-radius: 10px;
                 width: 100% !important;
                 height: 550px !important;
                 
@@ -553,19 +585,27 @@
 }
 
 main {
-    padding: 40px;
-    height: 550px;
+    padding: 60px;
+    height: 410px;
     @include responsive(Tablet){
         padding: 20px;
         
     }
     @include responsive(Mobile){
-
-        padding: 5px;
+        
+        height: 610px;
+        // padding: 30px;
 
     }
     .title-main {
-        height: 170px;
+        h1{
+            color: $white-color;
+            @include responsive(Mobile) {
+                font-size: 19px;
+
+            }
+        }
+        height: 100px;
         @include responsive(Mobile){
             height: 90px;
            
@@ -581,7 +621,11 @@ main {
     .card-person {
         display: flex;
         justify-content: space-between;
-        // padding-top: 20px;
+        @include responsive(Mobile) {
+            flex-wrap: wrap;
+
+        }
+
 
         .card {
             transition: box-shadow 0.1s ease-in-out, transform 1s;
@@ -593,7 +637,7 @@ main {
             }
 
             padding: 10px;
-            border-radius: 20px;
+            border-radius: 10px;
             background-color: #dad9d9;
             display: flex;
             flex-direction: column;
@@ -601,6 +645,10 @@ main {
             text-align: center;
             width: 20%;
             height: 300px;
+            @include responsive(Mobile) {
+                width: 40%;
+               
+            }
             
             @include responsive(Mobile){
                 height: 220px;
@@ -612,8 +660,9 @@ main {
 
             p {
                 margin-top: 20px;
+                font-size: 14px;
                 @include responsive(Mobile){
-                   font-size: 12px;
+                   font-size: 10px;
                     
                 }
 
@@ -621,7 +670,7 @@ main {
 
             img {
                 padding: 10px;
-                width: 60%;
+                width: 50%;
                 border-radius: 50%;
 
 

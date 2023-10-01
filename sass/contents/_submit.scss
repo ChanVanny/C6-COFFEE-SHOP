@@ -26,18 +26,27 @@
     h1{
         flex: 0.2;
         width: 60%;
+        @include responsive(Tablet){
+            font-size: 20px;
+        }
     }
     p{
+        @include responsive(Tablet){
+            font-size: 11px;
+        }
        flex: 1;
         width: 80%;
         margin-bottom: 10px;
     }
     img{
-        height: 200px;
+        width: 30%;
         margin-bottom: 10px;
     }
-    a{
-        padding: 4px 100px 4px 100px;                   
+    a{  display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        width: 40%;
         border-radius: 7px;
         font-size: 15px;
         border: 3px solid pink;

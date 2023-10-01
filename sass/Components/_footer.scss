@@ -3,36 +3,48 @@
 footer{
     padding: 10px 40px 10px 40px;
     @include responsive(Mobile){
-        padding: 10px 5px 10px 5px;
+        padding: 10px 30px 10px 30px;
 
     }
 
     background-color: #191414;
-    color: white ;
+    color: $white-color ;
     height: 180px;
     display: flex;
     justify-content: space-around;
+    column-gap: 50px;
     .discrib{
         @include responsive(Mobile){
-            font-size: 12px;
+            font-size: 11px;
+        }
+        @include responsive(Tablet) {
+            font-size: 13px;
+           
+
         }
 
         width: 250px;
         h2{
             @include responsive(Mobile){
-                font-size: 16px;
+                font-size: 15px;
+            }
+            @include responsive(Tablet){
+                font-size: 18px;
             }
             height: 60px;
             display: flex;
             align-items: center;
-            color: #DF7357;
+            color: $famous-menu-color;
         }
         .location,.phone,.email-{
             display: flex;
             gap: 5px;
             margin-bottom: 5px;
             @include responsive(Mobile){
-               font-size: 12px;
+               font-size: 11px;
+            }
+            @include responsive(Tablet){
+               font-size: 13px;
             }
 
         }
@@ -55,18 +67,21 @@ footer{
                     font-size: 100%;
 
                 }
-                border: 1.5px solid white;
+                border: 1.5px solid $white-color;
                 padding: 3px;
             }
 
         }
         .locations{
             // background-color: #DF7357;
-            gap: 30px;
+           
             p{
                 height: 60px;
                 @include responsive(Mobile){
-                    font-size: 12px;
+                    font-size: 11px;
+                }
+                @include responsive(Mobile){
+                    font-size: 13px;
                 }
             }
         }
