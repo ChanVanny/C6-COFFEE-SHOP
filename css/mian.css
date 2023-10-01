@@ -9,7 +9,7 @@ h1, h2, h3 {
 }
 
 body {
-  background-color: rgba(0, 0, 0, 0.4705882353);
+  background-color: rgba(0, 0, 0, 0.3450980392);
 }
 
 .welcom-main {
@@ -31,7 +31,7 @@ body {
   box-shadow: 0 0 2em rgb(187, 186, 186);
   padding: 30px;
 }
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 820px) {
   .main {
     width: 600px;
   }
@@ -54,7 +54,7 @@ body {
 .main .main-center img {
   width: 200px;
 }
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 820px) {
   .main .main-center img {
     width: 150px;
   }
@@ -1208,7 +1208,7 @@ main .card-person .card img {
 }
 
 body {
-  background-color: rgba(0, 0, 0, 0.4705882353);
+  background-color: rgba(0, 0, 0, 0.3450980392);
 }
 
 .welcom-main {
@@ -1230,7 +1230,7 @@ body {
   box-shadow: 0 0 2em rgb(187, 186, 186);
   padding: 30px;
 }
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 820px) {
   .main {
     width: 600px;
   }
@@ -1253,7 +1253,7 @@ body {
 .main .main-center img {
   width: 200px;
 }
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 820px) {
   .main .main-center img {
     width: 150px;
   }
