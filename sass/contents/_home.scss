@@ -1,4 +1,5 @@
  @import "../Mixin/Responsive";
+ @import "../Variable/variable";
 
 .container {
     @include responsive(Mobile) {
@@ -21,8 +22,8 @@
             width: 90%;
         }
         flex: 1.5;
-        background: rgba(245, 222, 179, 0.141);
-        color: white;
+        background: rgba(245, 222, 179, 0.241);
+        color:$white-color;
         border-radius: 10px 10px 10px 10px;
         margin-left: 40px;
         h1 {
@@ -94,7 +95,7 @@
 
         .cover-sell img,
         .cover-sit img {
-            border: 3px solid white;
+            border: 3px solid $white-color;
         }
     }
 }
@@ -106,7 +107,7 @@
         width: 90%;
         margin-top: 10%;
     }
-    background:white;
+    background:$white-color;
     width: 80%;
     margin: auto;
     margin-top: 5%;
@@ -122,10 +123,14 @@
              }
             text-align: center;
             padding-top: 20px;
+            font-size: 40px;
             color:red;
         }
     } 
     .content-promotion{
+        @include responsive(Mobile) {
+           display: flex;
+        }
         display: flex; 
        }
         .pic{
@@ -134,8 +139,8 @@
             .pic-coffee{
              img{
                 @include responsive(Mobile) {
-                    width: 250px;
-                    height: 250px;
+                    width: 100px;
+                    height: 100px;
                     margin-left: -15%;
                 }
                 @include responsive(Tablet){
@@ -158,7 +163,6 @@
                     @include responsive(Mobile) {
                         width: 200px;
                         height: 250px;
-                        margin-top: -5%;
                         margin-left: -100%;
                     }
                     @include responsive(Tablet){
@@ -176,22 +180,22 @@
         }
         .text-info-promotion{
             flex: 2;
-            margin-left: -10%;
-            @include responsive(Mobile) {  
-                margin-left: -40%;
-                margin-top: -5%;
-            }
+            margin-left: -1%;
             @include responsive(Tablet){
-                margin-left: -50%; 
-                margin-top: -10%;
+                margin-left: -30%; 
+                margin-top: -5%;
+                margin-bottom: 5%;
              }
             .text-discount{
+                 @include responsive(Mobile) {
+                     margin-left: -70%;
+                }
+                margin-top: -10%;
                 h1{
                     @include responsive(Mobile) {
-                        font-size: 60px;
-                    }
-                    font-size: 100px;
-                    color: red;
+                        font-size: 60px;                    }
+                        font-size: 100px;
+                        color: red;
                     span{
                         @include responsive(Mobile) {
                             font-size: 30px;
@@ -204,6 +208,9 @@
                 }
             }
             .text-free{
+                @include responsive(Mobile) {
+                    margin-left: -65%;
+               }
                 h1{
                     font-size: 30px;
                     color: red;
@@ -214,26 +221,36 @@
                 }
             }
             button{
-                @include responsive(Mobile) {
-                    width: 100px;
-                    margin-left: -10%;
-                    border-radius: 2px 2px 2px 2px ;
+                @include responsive(Mobile){
+                    display: none;
                 }
                 @include responsive(Tablet){
-                    width: 208.5px;
-                    padding: 20px;
-         
-                 }
-                width: 300px;
-                margin-left: 38.5%;
-                margin-bottom: 20px;
-                padding: 40px;
-                border-radius: 90px 0 0 0;
-                .text-add{
-                    p{
-                        font-size: 20px;
+                    margin-left: 1px;
+                    background: none;
+                    color: $dark-color;
+                }
+                display: flex;
+                width: 200px;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1px;
+                margin-left: 49%;
+                border-radius:30px 0 0 0;
+                .pic-free {
+                    img{
+                        width: 80px;
+                        height: 60px;
                     }
+                }
+                .text-add{
+                    margin-left: -70%;
+                    margin-right: 1px;
+                    font-size: 15px;
                     span{
+                        @include responsive(Mobile){
+                            color: red;
+                        }
+
                         font-size: 30px;
                     }
                 }
@@ -254,8 +271,9 @@
         @include responsive(Tablet){
             font-size: 30px;
          }
+         flex: 40px;
         padding: 20px;
-        color: white;
+        color:$white-color;
     }
     p {
         @include responsive(Mobile) {
@@ -286,7 +304,7 @@
                 
         }
         display: flex;
-        background: ghostwhite;
+        background:$card-color;
         margin: auto;
         margin-top: 60px;
         padding: 20px;
@@ -303,6 +321,8 @@
                     border-radius: 3px 3px 3px 3px;
                     margin: auto;
                     text-align: center;
+                    background: none;
+                    color: $dark-color;
                 }
                 @include responsive(Tablet){
                     width: 150px;
@@ -312,8 +332,8 @@
                 display: flex;
                 width: 200px;
                 height: 60px;
-                color: white;
-                background: #DF7357;
+                color: $white-color;
+                background: $famous-menu-color;
                 align-items: center;
                 border-radius: 0 0 90px 0;
                 margin: -20px 0 0 -20px;
@@ -343,11 +363,11 @@
                 font-size: 20px;
                 border-radius: 5px 5px 5px 5px;
                 a:hover{
-                    color: black;
+                    color:$dark-color;
                 }
             }
             button:hover{
-                background:brown;
+                background:$dark-color;
             }
         }
 
@@ -371,7 +391,7 @@
                 cursor: pointer;
 
                 &:hover {
-                    box-shadow: 0 0 30px rgba(123, 123, 123, 0.772);
+                    box-shadow: 0 0 30px $dark-color;
                 }
             }
         }
@@ -396,7 +416,7 @@
          }
         text-align: center;
         padding: 10% 0 15% 0;
-        color: white;
+        color:$white-color;
     }
 
     .content-about {
