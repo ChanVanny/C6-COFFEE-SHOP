@@ -1,45 +1,47 @@
-
-
-.container5{
+.container5 {
     display: flex;
-    flex-direction: column;
-    gap: 50px;
+    gap: 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 40px;
 }
-.container5-card-cake{
-    display: flex;
-    justify-content: space-around;
+    .card-cake {
 
-    .card-cake{
-        // border: 2px solid #ac3f3f;
-        background-color: #dcdcdcb5;
+        transition: box-shadow 0.1s ease-in-out, transform 1s;
+
+        &:hover {
+
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.245) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            transform: translateY(-10px);
+        }
+        
+        background-color: $card-color;
         border-radius: 5px;
         width: 230px;
         height: 270px;
         padding: 10px;
         text-align: center;
-        
-        &:hover{
-            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.245) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
-        }
-    
-        .card-cake-top{
+        .card-cake-top {
             display: flex;
             justify-content: end;
-    
-            i{
+
+            i {
                 font-size: x-large;
+                &:hover{
+                    color: $button-color;
+                }
             }
         }
-        .card-cake-center{
-            img{
+
+        .card-cake-center {
+            img {
                 width: 120px;
             }
         }
-        .card-cake-buttom{
-            display: flex;
-            flex-direction: column;
+
+        .card-cake-buttom {
+            @include flex;
             gap: 10px;
         }
     }
-}

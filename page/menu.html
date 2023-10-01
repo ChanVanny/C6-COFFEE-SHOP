@@ -18,19 +18,20 @@
         </div>
         <div class="navbar-right">
             <a href="/index.html">Home</a>
-            <a href="#">Menu
-                <select onchange="location = this.value">
-                    <option value="#" selected disabled>Select Menu</option>
-                    <option value="#container-menu3">Coffee</option>
-                    <option value="#container-menu4">Tea</option>
-                    <option value="#container5">Cake</option>
-                </select>         
-            </a>
+            <div id="menu">
+                    <a href="#" class="he">Menu</a>
+                    <div class="select-menu">
+                        <a href="#container-menu3">Coffee</a>
+                        <a href="#container-menu4">Tea</a>
+                        <a href="#container5">cake</a>
+                    </div>
+                
+            </div>
             <a href="./contact.html">Contact Us</a>
         </div>
     </nav>
 
-    <div class="container-menu">
+    <div class="container-menu-menu">
         <div class="container-menu1">
             <div class="header">
                 <h1>Welcome to Menu of PNC Cafe</h1>
@@ -47,20 +48,21 @@
                 </div>
             </div>
         </div>
-        <div class="container-menu2">
-            <div class="container-menu2-left">
-                <h1>MENU OF COFFEE</h1>
-            </div>
-            <div id="container-menu3" class="container-menu3">
-                <div class="container-menu3-card">
+        <div class="container-menu">
+            <div class="container-menu2">
+                <div class="container-menu2-left">
+                    <h1>MENU OF COFFEE</h1>
+                </div>
+                <div id="container-menu3" class="container-menu3">
                     <div class="card">
                         <div class="card-top">
                             <img src="/img/card1.png" alt="">
-                            <!-- <img src="/img/purple-tea.png" alt=""> -->
                         </div>
                         <div class="card-center">
                             <h2>Ice Latte</h2>
-                            <p>An iced latte is a chilled coffee beverage that's made by mixing espresso with chilled milk, simple syrup, and ice cubes.</p>
+                            <p>An iced latte is a chilled coffee beverage that's made by mixing espresso with chilled
+                                milk,
+                                simple syrup, and ice cubes.</p>
                         </div>
                         <div class="card-button">
                             <div class="card-button-left">
@@ -85,7 +87,9 @@
                         </div>
                         <div class="card-center">
                             <h2>Cappucino</h2>
-                            <p>A cappuccino is an espresso-based coffee drink that is traditionally prepared with steamed milk foam.</p>
+                            <p>A cappuccino is an espresso-based coffee drink that is traditionally prepared with
+                                steamed
+                                milk foam.</p>
                         </div>
                         <div class="card-button">
                             <div class="card-button-left">
@@ -111,7 +115,8 @@
                         </div>
                         <div class="card-center">
                             <h2>Milk Coffee</h2>
-                            <p>Milk coffee is a category of coffee-based drinks made with milk. Johan Nieuhof, the Dutch ambassador to China.</p>
+                            <p>Milk coffee is a category of coffee-based drinks made with milk. Johan Nieuhof, the Dutch
+                                ambassador to China.</p>
                         </div>
                         <div class="card-button">
                             <div class="card-button-left">
@@ -131,31 +136,29 @@
 
                         </div>
                     </div>
-                </div>
-                <div class="container-menu3-card">
                     <div class="card">
                         <div class="card-top">
                             <img src="/img/card4.png" alt="">
                         </div>
                         <div class="card-center">
                             <h2>Black Coffee</h2>
-                            <p>Black coffee is simply coffeewith nothing added – no cream, no milk, no sweetener. When you leave out those extra ingredients,</p>
+                            <p>Black coffee is simply coffeewith nothing added no cream, no milk, no sweetener. When
+                                you
+                                leave out those extra ingredients,</p>
                         </div>
                         <div class="card-button">
                             <div class="card-button-left">
                                 <span> <b>Size: S</b></span>
                                 <span> <b>Size: M</b></span>
                                 <span><b>Size: L</b></span>
-                
-                                <button><b><a href="./welcome.html">View more</a></b></button>
 
+                                <button><b><a href="./welcome.html">View more</a></b></button>
                             </div>
                             <div class="card-button-right">
                                 <span> <b>0.75$</b></span>
                                 <span> <b>1.00$</b></span>
                                 <span> <b>1.50$</b></span>
                                 <span><i class="ri-heart-line"></i></span>
-
                             </div>
                         </div>
                     </div>
@@ -165,16 +168,16 @@
                         </div>
                         <div class="card-center">
                             <h2>Ice Mocha</h2>
-                            <p>Mocha is a combination of chocolate and coffee, so an iced mocha is simply an iced latte with chocolate syrup added.</p>
+                            <p>Mocha is a combination of chocolate and coffee, so an iced mocha is simply an iced latte
+                                with
+                                chocolate syrup added.</p>
                         </div>
                         <div class="card-button">
                             <div class="card-button-left">
                                 <span> <b>Size: S</b></span>
                                 <span> <b>Size: M</b></span>
                                 <span><b>Size: L</b></span>
-                                <!-- <img src="/img/IconStar.png" alt=""> -->
                                 <button><b><a href="./welcome.html">View more</a></b></button>
-
                             </div>
                             <div class="card-button-right">
                                 <span> <b>1.75$</b></span>
@@ -192,7 +195,9 @@
                         </div>
                         <div class="card-center">
                             <h2>Cartado Coffee</h2>
-                            <p>A cortado is a beverage consisting of espresso mixed with a roughly equal amount of warm milk to reduce the acidity,</p>
+                            <p>A cortado is a beverage consisting of espresso mixed with a roughly equal amount of warm
+                                milk
+                                to reduce the acidity,</p>
                         </div>
                         <div class="card-button">
                             <div class="card-button-left">
@@ -209,365 +214,361 @@
                                 <span><i class="ri-heart-line"></i></span>
 
                             </div>
-
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="container-menu2-left">
+                <h1>MENU OF TEA</h1>
             </div>
             <div id="container-menu4" class="container-menu3">
-                <div class="container-menu3-header">
-                    <h1>MENU OF TEA</h1>
 
-                </div>
-                <div class="container-menu3-card">
-
-                    <div class="card">
-                        <div class="card-top">
-                            <img src="/img/card-tea-1.webp" alt="">
-                        </div>
-                        <div class="card-center">
-                            <h2>Green milk Tea</h2>
-                            <p>Whereas green tea leaves are steeped in hot water before use, matcha powder is blended directly into recipes or beverages.</p>
-                        </div>
-                        <div class="card-button">
-                            <div class="card-button-left">
-                                <span> <b>Size: S</b></span>
-                                <span> <b>Size: M</b></span>
-                                <span><b>Size: L</b></span>
-                               
-                                <button><b><a href="./welcome.html">View more</a></b></button>
-
-                            </div>
-                            <div class="card-button-right">
-                                <span> <b>0.75$</b></span>
-                                <span> <b>1.00$</b></span>
-                                <span> <b>1.50$</b></span>
-                                <span><i class="ri-heart-line"></i></span>
-
-                            </div>
-                        </div>
+                <div class="card">
+                    <div class="card-top">
+                        <img src="/img/card-tea-1.webp" alt="">
                     </div>
-                    <div class="card">
-                        <div class="card-top">
-                            <img src="/img/card-tea-2.jpg" alt="">
-                        </div>
-                        <div class="card-center">
-                            <h2>butterfly pea blue tea</h2>
-                            <p>This butterfly pea bubble tea is a colourful and exotic variation of the classic Taiwanese boba tea, made with Thai butterfly pea flower tea and fresh coconut milk.</p>
-                        </div>
-                        <div class="card-button">
-                            <div class="card-button-left">
-                                <span> <b>Size: S</b></span>
-                                <span> <b>Size: M</b></span>
-                                <span><b>Size: L</b></span>
-                                <button><b><a href="./welcome.html">View more</a></b></button>
-
-                            </div>
-                            <div class="card-button-right">
-                                <span> <b>1.00$</b></span>
-                                <span> <b>1.50$</b></span>
-                                <span> <b>2.00$</b></span>
-                                <span><i class="ri-heart-line"></i></span>
-
-                            </div>
-                        </div>
+                    <div class="card-center">
+                        <h2>Green milk Tea</h2>
+                        <p>Whereas green tea leaves are steeped in hot water before use, matcha powder is blended
+                            directly into recipes or beverages.</p>
                     </div>
+                    <div class="card-button">
+                        <div class="card-button-left">
+                            <span> <b>Size: S</b></span>
+                            <span> <b>Size: M</b></span>
+                            <span><b>Size: L</b></span>
 
-                    <div class="card">
-                        <div class="card-top">
-                            <img src="/img/card-tea-3.jpg" alt="">
+                            <button><b><a href="./welcome.html">View more</a></b></button>
+
                         </div>
-                        <div class="card-center">
-                            <h2>Purple Potato Tea</h2>
-                            <p>Purple sweet potato bubble tea is an iced milk tea made with purple sweet potato powder and boba (tapioca balls).</p>
-                        </div>
-                        <div class="card-button">
-                            <div class="card-button-left">
-                                <span> <b>Size: S</b></span>
-                                <span> <b>Size: M</b></span>
-                                <span><b>Size: L</b></span>   
-                                <button><b><a href="./welcome.html">View more</a></b></button>
-
-                            </div>
-                            <div class="card-button-right">
-                                <span> <b>1.50$</b></span>
-                                <span> <b>2.00$</b></span>
-                                <span> <b>2.50$</b></span>
-                                <span><i class="ri-heart-line"></i></span>
-
-                            </div>
+                        <div class="card-button-right">
+                            <span> <b>0.75$</b></span>
+                            <span> <b>1.00$</b></span>
+                            <span> <b>1.50$</b></span>
+                            <span><i class="ri-heart-line"></i></span>
 
                         </div>
                     </div>
                 </div>
-                <div class="container-menu3-card">
-                    <div class="card">
-                        <div class="card-top">
-                            <img src="/img/card-tea-4.jpg" alt="">
-                        </div>
-                        <div class="card-center">
-                            <h2>Milk Tea</h2>
-                            <p>Milk tea is the classic black milk tea is the most basic and popular. It simply consists of brewed black tea, milk creamer, and sweetener.</p>
-                        </div>
-                        <div class="card-button">
-                            <div class="card-button-left">
-                                <span> <b>Size: S</b></span>
-                                <span> <b>Size: M</b></span>
-                                <span><b>Size: L</b></span>
-                                <button><b><a href="./welcome.html">View more</a></b></button>
-
-                            </div>
-                            <div class="card-button-right">
-                                <span> <b>1.50$</b></span>
-                                <span> <b>2.00$</b></span>
-                                <span> <b>2.50$</b></span>
-                                <span><i class="ri-heart-line"></i></span>
-
-                            </div>
-                        </div>
+                <div class="card">
+                    <div class="card-top">
+                        <img src="/img/card-tea-2.jpg" alt="">
                     </div>
-                    <div class="card">
-                        <div class="card-top">
-                            <img src="/img/card-tea-5.jpg" alt="">
-                        </div>
-                        <div class="card-center">
-                            <h2>Black Tea</h2>
-                            <p>Black tea is a type of tea that is more oxidized than oolong, yellow, white and green teas. Black tea is generally stronger in flavour than other teas.</p>
-                        </div>
-                        <div class="card-button">
-                            <div class="card-button-left">
-                                <span> <b>Size: S</b></span>
-                                <span> <b>Size: M</b></span>
-                                <span><b>Size: L</b></span>
-                                <!-- <img src="/img/IconStar.png" alt=""> -->
-                                <button><b><a href="./welcome.html">View more</a></b></button>
-
-                            </div>
-                            <div class="card-button-right">
-                                <span> <b>0.50$</b></span>
-                                <span> <b>0.75$</b></span>
-                                <span> <b>1.00$</b></span>
-                                <span><i class="ri-heart-line"></i></span>
-
-                            </div>
-                        </div>
+                    <div class="card-center">
+                        <h2>butterfly pea blue tea</h2>
+                        <p>This butterfly pea bubble tea is a colourful and exotic variation of the classic Taiwanese
+                            boba tea, made with Thai butterfly pea flower tea and fresh coconut milk.</p>
                     </div>
+                    <div class="card-button">
+                        <div class="card-button-left">
+                            <span> <b>Size: S</b></span>
+                            <span> <b>Size: M</b></span>
+                            <span><b>Size: L</b></span>
+                            <button><b><a href="./welcome.html">View more</a></b></button>
 
-                    <div class="card">
-                        <div class="card-top">
-                            <img src="/img/card-tea-6.webp" alt="">
                         </div>
-                        <div class="card-center">
-                            <h2>Lemon Tes</h2>
-                            <p>Lemon tea is a popular anti-inflammatory breakfast beverage that works wonders when it comes to boosting your immune system,</p>
-                        </div>
-                        <div class="card-button">
-                            <div class="card-button-left">
-                                <span> <b>Size: S</b></span>
-                                <span> <b>Size: M</b></span>
-                                <span><b>Size: L</b></span>
-                                <button><b><a href="./welcome.html">View more</a></b></button>
-
-                            </div>
-                            <div class="card-button-right">
-                                <span> <b>0.75$</b></span>
-                                <span> <b>1.500$</b></span>
-                                <span> <b>2.00$</b></span>
-                                <span><i class="ri-heart-line"></i></span>
-
-                            </div>
+                        <div class="card-button-right">
+                            <span> <b>1.00$</b></span>
+                            <span> <b>1.50$</b></span>
+                            <span> <b>2.00$</b></span>
+                            <span><i class="ri-heart-line"></i></span>
 
                         </div>
                     </div>
                 </div>
+
+                <div class="card">
+                    <div class="card-top">
+                        <img src="/img/card-tea-3.jpg" alt="">
+                    </div>
+                    <div class="card-center">
+                        <h2>Purple Potato Tea</h2>
+                        <p>Purple sweet potato bubble tea is an iced milk tea made with purple sweet potato powder and
+                            boba (tapioca balls).</p>
+                    </div>
+                    <div class="card-button">
+                        <div class="card-button-left">
+                            <span> <b>Size: S</b></span>
+                            <span> <b>Size: M</b></span>
+                            <span><b>Size: L</b></span>
+                            <button><b><a href="./welcome.html">View more</a></b></button>
+
+                        </div>
+                        <div class="card-button-right">
+                            <span> <b>1.50$</b></span>
+                            <span> <b>2.00$</b></span>
+                            <span> <b>2.50$</b></span>
+                            <span><i class="ri-heart-line"></i></span>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                        <img src="/img/card-tea-4.jpg" alt="">
+                    </div>
+                    <div class="card-center">
+                        <h2>Milk Tea</h2>
+                        <p>Milk tea is the classic black milk tea is the most basic and popular. It simply consists of
+                            brewed black tea, milk creamer, and sweetener.</p>
+                    </div>
+                    <div class="card-button">
+                        <div class="card-button-left">
+                            <span> <b>Size: S</b></span>
+                            <span> <b>Size: M</b></span>
+                            <span><b>Size: L</b></span>
+                            <button><b><a href="./welcome.html">View more</a></b></button>
+                        </div>
+                        <div class="card-button-right">
+                            <span> <b>1.50$</b></span>
+                            <span> <b>2.00$</b></span>
+                            <span> <b>2.50$</b></span>
+                            <span><i class="ri-heart-line"></i></span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                        <img src="/img/card-tea-5.jpg" alt="">
+                    </div>
+                    <div class="card-center">
+                        <h2>Black Tea</h2>
+                        <p>Black tea is a type of tea that is more oxidized than oolong, yellow, white and green teas.
+                            Black tea is generally stronger in flavour than other teas.</p>
+                    </div>
+                    <div class="card-button">
+                        <div class="card-button-left">
+                            <span> <b>Size: S</b></span>
+                            <span> <b>Size: M</b></span>
+                            <span><b>Size: L</b></span>
+                            <button><b><a href="./welcome.html">View more</a></b></button>
+
+                        </div>
+                        <div class="card-button-right">
+                            <span> <b>0.50$</b></span>
+                            <span> <b>0.75$</b></span>
+                            <span> <b>1.00$</b></span>
+                            <span><i class="ri-heart-line"></i></span>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-top">
+                        <img src="/img/card-tea-6.webp" alt="">
+                    </div>
+                    <div class="card-center">
+                        <h2>Lemon Tes</h2>
+                        <p>Lemon tea is a popular anti-inflammatory breakfast beverage that works wonders when it comes
+                            to boosting your immune system,</p>
+                    </div>
+                    <div class="card-button">
+                        <div class="card-button-left">
+                            <span> <b>Size: S</b></span>
+                            <span> <b>Size: M</b></span>
+                            <span><b>Size: L</b></span>
+                            <button><b><a href="./welcome.html">View more</a></b></button>
+
+                        </div>
+                        <div class="card-button-right">
+                            <span> <b>0.75$</b></span>
+                            <span> <b>1.500$</b></span>
+                            <span> <b>2.00$</b></span>
+                            <span><i class="ri-heart-line"></i></span>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="container-menu2-left">
+                <h1>MENU OF CAKE</h1>
             </div>
             <div id="container5" class="container5">
-                <div class="container-menu3-header">
-                    <h1>MENU OF CAKE</h1>
-                </div>
-                <div class="container5-card-cake">
-                    <div class="card-cake">
-                        <div class="card-cake-top">
-                            <i class="ri-heart-line"></i>
-                        </div>
-                        <div class="card-cake-center">
-                            <img src="/img/cake1.png" alt="cake">
-                        </div>
-                        <div class="card-cake-buttom">
-                            <h3>CupCake</h3>
-                            <span><b>0.75$</b></span>
-                            <div class="button">
-                                <button><b><a href="./welcome.html">View more</a></b></button>
-
-                            </div>
-                        </div>
+                <div class="card-cake">
+                    <div class="card-cake-top">
+                        <i class="ri-heart-line"></i>
                     </div>
-                    <div class="card-cake">
-                        <div class="card-cake-top">
-                            <i class="ri-heart-line"></i>
-                        </div>
-                        <div class="card-cake-center">
-                            <img src="/img/cake2.png" alt="cake">
-                        </div>
-                        <div class="card-cake-buttom">
-                            <h3>Brownie Cake</h3>
-                            <span><b>1.50$</b></span>
-                            <div class="button">
-                                <button><b><a href="./welcome.html">View more</a></b></button>
-
-                            </div>
-                        </div>
+                    <div class="card-cake-center">
+                        <img src="/img/cake1.png" alt="cake">
                     </div>
-                    <div class="card-cake">
-                        <div class="card-cake-top">
-                            <i class="ri-heart-line"></i>
-                        </div>
-                        <div class="card-cake-center">
-                            <img src="/img/cake4.png" alt="cake">
-                        </div>
-                        <div class="card-cake-buttom">
-                            <h3>Cookie Cake</h3>
-                            <span><b>1.00$</b></span>
-                            <div class="button">
-                                <button><b><a href="./welcome.html">View more</a></b></button>
+                    <div class="card-cake-buttom">
+                        <h3>CupCake</h3>
+                        <span><b>0.75$</b></span>
+                        <div class="button">
+                            <button><b><a href="./welcome.html">View more</a></b></button>
 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-cake">
-                        <div class="card-cake-top">
-                            <i class="ri-heart-line"></i>
-                        </div>
-                        <div class="card-cake-center">
-                            <img src="/img/cake5.png" alt="cake">
-                        </div>
-                        <div class="card-cake-buttom">
-                            <h3>Strawberry Cake</h3>
-                            <span><b>1.75$</b></span>
-                            <div class="button">
-                                <button><b><a href="./welcome.html">View more</a></b></button>
-
-                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="container5-card-cake">
-                    <div class="card-cake">
-                        <div class="card-cake-top">
-                            <i class="ri-heart-line"></i>
-                        </div>
-                        <div class="card-cake-center">
-                            <img src="/img/cake6.png" alt="cake">
-                        </div>
-                        <div class="card-cake-buttom">
-                            <h3>Chocolate Cake</h3>
-                            <span><b>2.00$</b></span>
-                            <div class="button">
-                                <button><b><a href="./welcome.html">View more</a></b></button>
-
-                            </div>
-                        </div>
+                <div class="card-cake">
+                    <div class="card-cake-top">
+                        <i class="ri-heart-line"></i>
                     </div>
-                    <div class="card-cake">
-                        <div class="card-cake-top">
-                            <i class="ri-heart-line"></i>
-                        </div>
-                        <div class="card-cake-center">
-                            <img src="/img/cake7.png" alt="cake">
-                        </div>
-                        <div class="card-cake-buttom">
-                            <h3>Joffer Cake</h3>
-                            <span><b>1.50$</b></span>
-                            <div class="button">
-                                <button><b><a href="./welcome.html">View more</a></b></button>
-
-                            </div>
-                        </div>
+                    <div class="card-cake-center">
+                        <img src="/img/cake2.png" alt="cake">
                     </div>
-                    <div class="card-cake">
-                        <div class="card-cake-top">
-                            <i class="ri-heart-line"></i>
-                        </div>
-                        <div class="card-cake-center">
-                            <img src="/img/cake8.png" alt="cake">
-                        </div>
-                        <div class="card-cake-buttom">
-                            <h3>Chocolate Ice-Cream </h3>
-                            <span><b>0.75$</b></span>
-                            <div class="button">
-                                <button><b><a href="./welcome.html">View more</a></b></button>
+                    <div class="card-cake-buttom">
+                        <h3>Brownie Cake</h3>
+                        <span><b>1.50$</b></span>
+                        <div class="button">
+                            <button><b><a href="./welcome.html">View more</a></b></button>
 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-cake">
-                        <div class="card-cake-top">
-                            <i class="ri-heart-line"></i>
-                        </div>
-                        <div class="card-cake-center">
-                            <img src="/img/cake3.png" alt="cake">
-                        </div>
-                        <div class="card-cake-buttom">
-                            <h3>Carash Cake</h3>
-                            <span><b>2.75$</b></span>
-                            <div class="button">
-                                <button><b><a href="./welcome.html">View more</a></b></button>
-                                
-
-                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="card-cake">
+                    <div class="card-cake-top">
+                        <i class="ri-heart-line"></i>
+                    </div>
+                    <div class="card-cake-center">
+                        <img src="/img/cake4.png" alt="cake">
+                    </div>
+                    <div class="card-cake-buttom">
+                        <h3>Cookie Cake</h3>
+                        <span><b>1.00$</b></span>
+                        <div class="button">
+                            <button><b><a href="./welcome.html">View more</a></b></button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card-cake">
+                    <div class="card-cake-top">
+                        <i class="ri-heart-line"></i>
+                    </div>
+                    <div class="card-cake-center">
+                        <img src="/img/cake5.png" alt="cake">
+                    </div>
+                    <div class="card-cake-buttom">
+                        <h3>Strawberry Cake</h3>
+                        <span><b>1.75$</b></span>
+                        <div class="button">
+                            <button><b><a href="./welcome.html">View more</a></b></button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card-cake">
+                    <div class="card-cake-top">
+                        <i class="ri-heart-line"></i>
+                    </div>
+                    <div class="card-cake-center">
+                        <img src="/img/cake6.png" alt="cake">
+                    </div>
+                    <div class="card-cake-buttom">
+                        <h3>Chocolate Cake</h3>
+                        <span><b>2.00$</b></span>
+                        <div class="button">
+                            <button><b><a href="./welcome.html">View more</a></b></button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card-cake">
+                    <div class="card-cake-top">
+                        <i class="ri-heart-line"></i>
+                    </div>
+                    <div class="card-cake-center">
+                        <img src="/img/cake7.png" alt="cake">
+                    </div>
+                    <div class="card-cake-buttom">
+                        <h3>Joffer Cake</h3>
+                        <span><b>1.50$</b></span>
+                        <div class="button">
+                            <button><b><a href="./welcome.html">View more</a></b></button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card-cake">
+                    <div class="card-cake-top">
+                        <i class="ri-heart-line"></i>
+                    </div>
+                    <div class="card-cake-center">
+                        <img src="/img/cake8.png" alt="cake">
+                    </div>
+                    <div class="card-cake-buttom">
+                        <h3>Chocolate Ice-Cream </h3>
+                        <span><b>0.75$</b></span>
+                        <div class="button">
+                            <button><b><a href="./welcome.html">View more</a></b></button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card-cake">
+                    <div class="card-cake-top">
+                        <i class="ri-heart-line"></i>
+                    </div>
+                    <div class="card-cake-center">
+                        <img src="/img/cake3.png" alt="cake">
+                    </div>
+                    <div class="card-cake-buttom">
+                        <h3>Carash Cake</h3>
+                        <span><b>2.75$</b></span>
+                        <div class="button">
+                            <button><b><a href="./welcome.html">View more</a></b></button>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
 
             </div>
-
         </div>
-        <footer>
-            <div class="discrib">
-                <h2>GET IN TOUCH</h2>
-                <div class="location">
-                    <span class="material-symbols-outlined">
-                        location_on
-                    </span>
-                    <p>123 Street, New York, USA</p>
-                </div>
-                <div class="phone">
-                    <span class="material-symbols-outlined">
-                        call
-                    </span>
-                    <p>+012 345 67890</p>
-                </div>
-                <div class="email-">
-                    <span class="material-symbols-outlined">
-                        mail
-                    </span>
-                    <p>mail@domain.com</p>
-                </div>
-            </div>
-            <div class="discrib">
-                <h2>FOLLOW US</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum,</p>
-                <div class="soilmidia">
-                    <i class="ri-facebook-fill"></i>
 
-                    <i class="ri-twitter-fill"></i>
-                    <i class="ri-linkedin-box-fill"></i>
-
-                    <i class="ri-instagram-fill"></i>
-                </div>
-            </div>
-            <div class="discrib">
-                <h2>OPEN HOURS</h2>
-                <div class="locations">
-                    <div class="time">
-                        <p>MONDAY - FRIDAY <br>8.00 AM - 8.00 PM</p>
-                    </div>
-                    <div class="data">
-                        <p>SATURDAY - SUNDAY <br>2.00 AM - 8.00 PM</p>
-                    </div>
-                </div>
-            </div>
     </div>
+    <footer>
+        <div class="discrib">
+            <h2>GET IN TOUCH</h2>
+            <div class="location">
+                <span class="material-symbols-outlined">
+                    location_on
+                </span>
+                <p>123 Street, New York, USA</p>
+            </div>
+            <div class="phone">
+                <span class="material-symbols-outlined">
+                    call
+                </span>
+                <p>+012 345 67890</p>
+            </div>
+            <div class="email-">
+                <span class="material-symbols-outlined">
+                    mail
+                </span>
+                <p>mail@domain.com</p>
+            </div>
+        </div>
+        <div class="discrib">
+            <h2>FOLLOW US</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum,</p>
+            <div class="soilmidia">
+                <i class="ri-facebook-fill"></i>
+
+                <i class="ri-twitter-fill"></i>
+                <i class="ri-linkedin-box-fill"></i>
+
+                <i class="ri-instagram-fill"></i>
+            </div>
+        </div>
+        <div class="discrib">
+            <h2>OPEN HOURS</h2>
+            <div class="locations">
+                <div class="time">
+                    <p>MONDAY - FRIDAY <br>8.00 AM - 8.00 PM</p>
+                </div>
+                <div class="data">
+                    <p>SATURDAY - SUNDAY <br>2.00 AM - 8.00 PM</p>
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
 
     </footer>
 </body>

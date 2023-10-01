@@ -10,3 +10,8 @@ $breakpoint: (
         @content;
     }
 }
+@mixin flex{
+    display: flex;
+    flex-direction: column;
+}
+
